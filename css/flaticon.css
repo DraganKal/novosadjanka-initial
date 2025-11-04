@@ -1,0 +1,87 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 20/10/2020 03:58
+  	*/
+
+	  @font-face {
+		font-family: "Flaticon";
+		src: url("../fonts/flaticon.eot");
+		src: url("../fonts/flaticon.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/flaticon.woff2") format("woff2"),
+			 url("../fonts/flaticon.woff") format("woff"),
+			 url("../fonts/flaticon.ttf") format("truetype"),
+			 url("../fonts/flaticon.svg#Flaticon") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	  }
+	  
+	  @media screen and (-webkit-min-device-pixel-ratio:0) {
+		@font-face {
+		  font-family: "Flaticon";
+		  src: url("./flaticon.svg#Flaticon") format("svg");
+		}
+	  }
+	  
+	  [class^="pbmit-lyfpro-icon-"]:before, [class*=" pbmit-lyfpro-icon-"]:before,
+	  [class^="pbmit-lyfpro-icon-"]:after, [class*=" pbmit-lyfpro-icon-"]:after {  
+		font-family: Flaticon;
+	  font-style: normal;
+	  
+	  }
+	  
+	  .pbmit-lyfpro-icon-business:before { content: "\f100"; }
+	  .pbmit-lyfpro-icon-incubator:before { content: "\f101"; }
+	  .pbmit-lyfpro-icon-startup:before { content: "\f102"; }
+	  .pbmit-lyfpro-icon-development:before { content: "\f103"; }
+	  .pbmit-lyfpro-icon-teamwork:before { content: "\f104"; }
+	  .pbmit-lyfpro-icon-network:before { content: "\f105"; }
+	  .pbmit-lyfpro-icon-program:before { content: "\f106"; }
+	  .pbmit-lyfpro-icon-client:before { content: "\f107"; }
+	  .pbmit-lyfpro-icon-company:before { content: "\f108"; }
+	  .pbmit-lyfpro-icon-service:before { content: "\f109"; }
+	  .pbmit-lyfpro-icon-model:before { content: "\f10a"; }
+	  .pbmit-lyfpro-icon-successful:before { content: "\f10b"; }
+	  .pbmit-lyfpro-icon-growth:before { content: "\f10c"; }
+	  .pbmit-lyfpro-icon-businessman:before { content: "\f10d"; }
+	  .pbmit-lyfpro-icon-crowdfunding:before { content: "\f10e"; }
+	  .pbmit-lyfpro-icon-executive:before { content: "\f10f"; }
+	  .pbmit-lyfpro-icon-coaching:before { content: "\f110"; }
+	  .pbmit-lyfpro-icon-leadership:before { content: "\f111"; }
+	  .pbmit-lyfpro-icon-coaching-1:before { content: "\f112"; }
+	  .pbmit-lyfpro-icon-mentor:before { content: "\f113"; }
+	  .pbmit-lyfpro-icon-coaching-2:before { content: "\f114"; }
+	  .pbmit-lyfpro-icon-coach:before { content: "\f115"; }
+	  .pbmit-lyfpro-icon-experience:before { content: "\f116"; }
+	  .pbmit-lyfpro-icon-award:before { content: "\f117"; }
+	  .pbmit-lyfpro-icon-trophy:before { content: "\f118"; }
+	  .pbmit-lyfpro-icon-award-1:before { content: "\f119"; }
+	  .pbmit-lyfpro-icon-secure-payment:before { content: "\f11a"; }
+	  .pbmit-lyfpro-icon-medal:before { content: "\f11b"; }
+	  .pbmit-lyfpro-icon-technical-support:before { content: "\f11c"; }
+	  .pbmit-lyfpro-icon-support:before { content: "\f11d"; }
+	  .pbmit-lyfpro-icon-customer-service:before { content: "\f11e"; }
+	  .pbmit-lyfpro-icon-email:before { content: "\f11f"; }
+	  .pbmit-lyfpro-icon-email-1:before { content: "\f120"; }
+	  .pbmit-lyfpro-icon-pin:before { content: "\f121"; }
+	  .pbmit-lyfpro-icon-call:before { content: "\f122"; }
+	  .pbmit-lyfpro-icon-pdf:before { content: "\f123"; }
+	  .pbmit-lyfpro-icon-doc:before { content: "\f124"; }
+	  .pbmit-lyfpro-icon-coach-1:before { content: "\f125"; }
+	  .pbmit-lyfpro-icon-coaching-3:before { content: "\f126"; }
+	  .pbmit-lyfpro-icon-online-course:before { content: "\f127"; }
+	  .pbmit-lyfpro-icon-consulting:before { content: "\f128"; }
+	  .pbmit-lyfpro-icon-consulting-1:before { content: "\f129"; }
+	  .pbmit-lyfpro-icon-instructor:before { content: "\f12a"; }
+	  .pbmit-lyfpro-icon-business-professional:before { content: "\f12b"; }
+	  .pbmit-lyfpro-icon-coaching-4:before { content: "\f12c"; }
+	  .pbmit-lyfpro-icon-mentor-1:before { content: "\f12d"; }
+	  .pbmit-lyfpro-icon-presentation:before { content: "\f12e"; }
+	  .pbmit-lyfpro-icon-supporter:before { content: "\f12f"; }
+	  .pbmit-lyfpro-icon-accounting:before { content: "\f130"; }
+	  .pbmit-lyfpro-icon-presentation-1:before { content: "\f131"; }
+	  .pbmit-lyfpro-icon-consulting-2:before { content: "\f132"; }
+	  .pbmit-lyfpro-icon-opportunity:before { content: "\f133"; }
+	  .pbmit-lyfpro-icon-online-business:before { content: "\f134"; }
+	  .pbmit-lyfpro-icon-advisor:before { content: "\f135"; }
+	  .pbmit-lyfpro-icon-right-arrow:before { content: "\f136"; }
+	  .pbmit-lyfpro-icon-check:before { content: "\f137"; }

@@ -1,0 +1,152 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 20/10/2020 03:58
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-business:before { content: "\f100"; }
+.flaticon-incubator:before { content: "\f101"; }
+.flaticon-startup:before { content: "\f102"; }
+.flaticon-development:before { content: "\f103"; }
+.flaticon-teamwork:before { content: "\f104"; }
+.flaticon-network:before { content: "\f105"; }
+.flaticon-program:before { content: "\f106"; }
+.flaticon-client:before { content: "\f107"; }
+.flaticon-company:before { content: "\f108"; }
+.flaticon-service:before { content: "\f109"; }
+.flaticon-model:before { content: "\f10a"; }
+.flaticon-successful:before { content: "\f10b"; }
+.flaticon-growth:before { content: "\f10c"; }
+.flaticon-businessman:before { content: "\f10d"; }
+.flaticon-crowdfunding:before { content: "\f10e"; }
+.flaticon-executive:before { content: "\f10f"; }
+.flaticon-coaching:before { content: "\f110"; }
+.flaticon-leadership:before { content: "\f111"; }
+.flaticon-coaching-1:before { content: "\f112"; }
+.flaticon-mentor:before { content: "\f113"; }
+.flaticon-coaching-2:before { content: "\f114"; }
+.flaticon-coach:before { content: "\f115"; }
+.flaticon-experience:before { content: "\f116"; }
+.flaticon-award:before { content: "\f117"; }
+.flaticon-trophy:before { content: "\f118"; }
+.flaticon-award-1:before { content: "\f119"; }
+.flaticon-secure-payment:before { content: "\f11a"; }
+.flaticon-medal:before { content: "\f11b"; }
+.flaticon-technical-support:before { content: "\f11c"; }
+.flaticon-support:before { content: "\f11d"; }
+.flaticon-customer-service:before { content: "\f11e"; }
+.flaticon-email:before { content: "\f11f"; }
+.flaticon-email-1:before { content: "\f120"; }
+.flaticon-pin:before { content: "\f121"; }
+.flaticon-call:before { content: "\f122"; }
+.flaticon-pdf:before { content: "\f123"; }
+.flaticon-doc:before { content: "\f124"; }
+.flaticon-coach-1:before { content: "\f125"; }
+.flaticon-coaching-3:before { content: "\f126"; }
+.flaticon-online-course:before { content: "\f127"; }
+.flaticon-consulting:before { content: "\f128"; }
+.flaticon-consulting-1:before { content: "\f129"; }
+.flaticon-instructor:before { content: "\f12a"; }
+.flaticon-business-professional:before { content: "\f12b"; }
+.flaticon-coaching-4:before { content: "\f12c"; }
+.flaticon-mentor-1:before { content: "\f12d"; }
+.flaticon-presentation:before { content: "\f12e"; }
+.flaticon-supporter:before { content: "\f12f"; }
+.flaticon-accounting:before { content: "\f130"; }
+.flaticon-presentation-1:before { content: "\f131"; }
+.flaticon-consulting-2:before { content: "\f132"; }
+.flaticon-opportunity:before { content: "\f133"; }
+.flaticon-online-business:before { content: "\f134"; }
+.flaticon-advisor:before { content: "\f135"; }
+.flaticon-right-arrow:before { content: "\f136"; }
+.flaticon-check:before { content: "\f137"; }
+
+    $font-Flaticon-business: "\f100";
+    $font-Flaticon-incubator: "\f101";
+    $font-Flaticon-startup: "\f102";
+    $font-Flaticon-development: "\f103";
+    $font-Flaticon-teamwork: "\f104";
+    $font-Flaticon-network: "\f105";
+    $font-Flaticon-program: "\f106";
+    $font-Flaticon-client: "\f107";
+    $font-Flaticon-company: "\f108";
+    $font-Flaticon-service: "\f109";
+    $font-Flaticon-model: "\f10a";
+    $font-Flaticon-successful: "\f10b";
+    $font-Flaticon-growth: "\f10c";
+    $font-Flaticon-businessman: "\f10d";
+    $font-Flaticon-crowdfunding: "\f10e";
+    $font-Flaticon-executive: "\f10f";
+    $font-Flaticon-coaching: "\f110";
+    $font-Flaticon-leadership: "\f111";
+    $font-Flaticon-coaching-1: "\f112";
+    $font-Flaticon-mentor: "\f113";
+    $font-Flaticon-coaching-2: "\f114";
+    $font-Flaticon-coach: "\f115";
+    $font-Flaticon-experience: "\f116";
+    $font-Flaticon-award: "\f117";
+    $font-Flaticon-trophy: "\f118";
+    $font-Flaticon-award-1: "\f119";
+    $font-Flaticon-secure-payment: "\f11a";
+    $font-Flaticon-medal: "\f11b";
+    $font-Flaticon-technical-support: "\f11c";
+    $font-Flaticon-support: "\f11d";
+    $font-Flaticon-customer-service: "\f11e";
+    $font-Flaticon-email: "\f11f";
+    $font-Flaticon-email-1: "\f120";
+    $font-Flaticon-pin: "\f121";
+    $font-Flaticon-call: "\f122";
+    $font-Flaticon-pdf: "\f123";
+    $font-Flaticon-doc: "\f124";
+    $font-Flaticon-coach-1: "\f125";
+    $font-Flaticon-coaching-3: "\f126";
+    $font-Flaticon-online-course: "\f127";
+    $font-Flaticon-consulting: "\f128";
+    $font-Flaticon-consulting-1: "\f129";
+    $font-Flaticon-instructor: "\f12a";
+    $font-Flaticon-business-professional: "\f12b";
+    $font-Flaticon-coaching-4: "\f12c";
+    $font-Flaticon-mentor-1: "\f12d";
+    $font-Flaticon-presentation: "\f12e";
+    $font-Flaticon-supporter: "\f12f";
+    $font-Flaticon-accounting: "\f130";
+    $font-Flaticon-presentation-1: "\f131";
+    $font-Flaticon-consulting-2: "\f132";
+    $font-Flaticon-opportunity: "\f133";
+    $font-Flaticon-online-business: "\f134";
+    $font-Flaticon-advisor: "\f135";
+    $font-Flaticon-right-arrow: "\f136";
+    $font-Flaticon-check: "\f137";
