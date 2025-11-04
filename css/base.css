@@ -38,7 +38,7 @@ INDEX:
     --pbmit-white-color: #ffffff;
     --pbmit-blackish-color: #222d35;
     --pbmit-link-color-normal: #222d35;
-    --pbmit-link-color-hover: #c3002f;
+    --pbmit-link-color-hover: #6b7f94;
     --pbmit-global-color-rgb: rgb(195, 0, 47);
     --pbmit-secondary-color-rgb: rgb(34, 45, 53);
     --pbmit-responsive-breakpoint: 1200px;
@@ -46,9 +46,9 @@ INDEX:
     --pbmit-body-typography-variant: regular;
     --pbmit-body-typography-font-size: 16px;
     --pbmit-body-typography-line-height: 1.7;
-    --pbmit-body-typography-color: #606060;
+    --pbmit-body-typography-color: #7a92aa;
     --pbmit-heading-typography-font-family: 'Rajdhani', sans-serif;
-    --pbmit-heading-color: #222d35;
+    --pbmit-heading-color: #7a92aa;
     --pbmit-heading-font-variant: 600;
     --pbmit-btn-typography-font-family: 'Rajdhani', sans-serif;
     --pbmit-btn-typography-variant: 600;
@@ -489,13 +489,13 @@ a.link-btn i,
 .pbmit-btn-outline {
     padding: 16px 38px;
     background-color: transparent;
-    color: var(--pbmit-secondary-color);
-    border: 2px solid var(--pbmit-secondary-color);
+    color: var(--pbmit-global-color);
+    border: 2px solid var(--pbmit-global-color);
 }
 
 .pbmit-btn-outline span::before {
     transition: all .3s ease-in-out;
-    background-color: var(--pbmit-secondary-color);
+    background-color: var(--pbmit-global-color);
 }
 
 .pbmit-btn-outline:hover span::before {
@@ -503,7 +503,7 @@ a.link-btn i,
 }
 
 .pbmit-btn-blackish {
-    background-color: var(--pbmit-secondary-color);
+    background-color: var(--pbmit-global-color);
 }
 
 .pbmit-btn-blackish:hover {
@@ -1264,3 +1264,5 @@ body .scroll-to-top:hover {
     -o-transform: translateY(0);
     transform: translateY(0);
 }
+
+/* CUSTOM */

@@ -63,7 +63,7 @@
     font-size: 42px;
     line-height: 46px;
     letter-spacing: -.5px;
-    color: #222d35;
+    color: var(--pbmit-global-color);
     text-transform: none;
     font-weight: 600;
     font-style: normal;
@@ -131,7 +131,7 @@
     right: 0;
     font-size: 48px;
     line-height: 48px;
-    color: rgb(121 121 121 / 20%);
+    color: var(--pbmit-global-color-light-5);
     display: inline-block;
     padding-right: 0px;
     background: #fff;
@@ -183,14 +183,15 @@
 .pbmit-ihbox-style-3{
     position: relative;    
     margin-bottom: 0px;      
-    border: 1px solid #e2e3e4;
+    border: 1px solid #ccdbea;
     border-right: 0;
     padding: 30px 40px;
+    height: 300px !important;
 }
 .pbmit-ihbox-style-3 .pbmit-ihbox-box-number{
     font-size: 24px; 
     line-height: 24px;
-    color: #e8e8e8;  
+    color: #ccdbea;  
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1666,10 +1667,10 @@
     line-height: 90px;
 }
 .header-style-1 .sticky-header .pbmit-header-button a {
-    color: #222d35;
+    color: var(--pbmit-global-color);
 }
 .header-style-1 .sticky-header .pbmit-header-button a:before{
-    color: #222d35;
+    color: var(--pbmit-global-color);
 }
 .header-style-1 .sticky-header .pbmit-header-search-btn a i {
     color: #09162a;
@@ -2001,7 +2002,7 @@
     height: 60px;
 }
 .footer-newsletter-links button {
-    background-color: #c3002f;
+    background-color: var(--pbmit-global-color-dark-1);
     color: #fff;
     border: none;
     padding: 21px 40px;
@@ -2102,7 +2103,7 @@ ul.pbmit-timelist-list li {
     padding-top: 20px;
 }
 .pbmit-footer-copyright-text-area a {
-    color: #b8c3cb;
+    color: var(--pbmit-global-color);
 }
 .pbmit-footer-copyright-text-area a:hover{
     color: var(--pbmit-white-color);
@@ -2894,14 +2895,14 @@ ul.list-group .list-group-item i{
     width:12px;
     height:12px;
     position:absolute;
-    background:#aaa; 
-    background:rgba(125,125,125,0.5);
+    background:#ccdbea; 
+    /* background:rgba(168, 33, 33, 0.5); */
     cursor:pointer;
     box-sizing:content-box
 }
 .custom .tp-bullet.rs-touchhover,
 .custom .tp-bullet.selected{
-    background:rgb(125,125,125)
+    background:#99b6d4
 }
 .header-style-1 .tparrows {
     bottom: -120px!important;
@@ -2914,7 +2915,7 @@ ul.list-group .list-group-item i{
     padding-right: 10px;
 }
 .header-style-1 .custom.tparrows.tp-leftarrow:after {
-    content: "PREV"!important;
+    content: "BACK"!important;
     margin-left: 10px;
 }
 .header-style-1 .custom.tparrows.tp-leftarrow:before {

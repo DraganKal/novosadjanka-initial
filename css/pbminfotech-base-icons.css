@@ -21,6 +21,7 @@
 */
  
  [class^="pbmit-base-icon-"]:before, [class*=" pbmit-base-icon-"]:before {
+  /* font-size: 25px; */
   font-family: "pbminfotech-base-icons";
   font-style: normal;
   font-weight: normal;
@@ -53,6 +54,10 @@
  
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-25 {
+  font-size: 25px;
 }
  
 .pbmit-base-icon-search:before { content: '\e800'; } /* '' */

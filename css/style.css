@@ -119,10 +119,10 @@ blockquote small:before {
     display: block;
     z-index: -1;
     margin-right: 210px;
-    background-color: var(--pbmit-light-color);
+    background-color: var(--pbmit-global-color-light-6);
 }
 .about-one-img img{
-    box-shadow: 68px 0px 0px -30px #C3002F;
+    box-shadow: 68px 0px 0px -30px var(--pbmit-global-color);
 }
 .pbmit-blc-style-1 .about-us-button{
     display: flex;
@@ -149,7 +149,7 @@ blockquote small:before {
     margin-bottom: 35px;
 }
 .who_we_are-bg{
-    background-image: url(../images/homepage-1/img-02.jpg);
+    background-image: url(../images/cropped-530x750.png);
     background-color: transparent;
     background-position: 50% 0%;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ blockquote small:before {
     background-color: var(--pbmit-global-color);
 }
 .testimonial-one-bg{
-    background-image: url(../images/homepage-1/img-03.jpg);
+    background-image: url(../images/1180x820.png);
     background-color: transparent;
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -235,7 +235,7 @@ blockquote small:before {
     padding-left: 65px;
     font-family: Rajdhani,sans-serif;
     color: var(--pbmit-white-color);
-    background-color: var(--pbmit-blackish-color) !important;
+    background-color: var(--pbmit-global-color) !important;
 }
 .input-group>.form-control:focus, 
 .input-group>.form-select:focus {
@@ -1678,3 +1678,4 @@ form button{
 .form-style-1 textarea.form-control {
     height: 120px;
 }
+
