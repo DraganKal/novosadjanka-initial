@@ -42,15 +42,15 @@ INDEX:
     --pbmit-global-color-rgb: rgb(195, 0, 47);
     --pbmit-secondary-color-rgb: rgb(34, 45, 53);
     --pbmit-responsive-breakpoint: 1200px;
-    --pbmit-body-typography-font-family: 'Source Sans Pro', sans-serif;
+    --pbmit-body-typography-font-family: 'Newsreader', 'Source Sans Pro', sans-serif;
     --pbmit-body-typography-variant: regular;
     --pbmit-body-typography-font-size: 16px;
     --pbmit-body-typography-line-height: 1.7;
     --pbmit-body-typography-color: #7a92aa;
-    --pbmit-heading-typography-font-family: 'Rajdhani', sans-serif;
+    --pbmit-heading-typography-font-family: 'Newsreader', 'Rajdhani', sans-serif;
     --pbmit-heading-color: #7a92aa;
     --pbmit-heading-font-variant: 600;
-    --pbmit-btn-typography-font-family: 'Rajdhani', sans-serif;
+    --pbmit-btn-typography-font-family: 'Newsreader', 'Rajdhani', sans-serif;
     --pbmit-btn-typography-variant: 600;
     --pbmit-btn-typography-font-size: 14px;
     --pbmit-btn-typography-line-height: 18px;
