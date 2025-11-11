@@ -82,9 +82,9 @@ blockquote small:before {
     padding: 0;
     font-weight: normal!important;
     position: relative;
-    padding-left: 45px;
-    font-size: 24px;
-    line-height: 36px;
+    padding-left: 35px;
+    font-size: 15px;
+    line-height: 24px;
 }
 .pbmit-blc-style-1 blockquote:before {
     position: absolute;
@@ -546,7 +546,7 @@ blockquote small:before {
     display: block;
     z-index: -1;
     margin-right: -250px;
-    background-color:var(--pbmit-secondary-color);
+    background-color:var(--gray-color-main);
 }
 .success-bg-right{
     position: relative;
@@ -584,6 +584,8 @@ blockquote small:before {
 .success-bg-left .fid-heading-desc{
     padding-right: 30px;
     color: var(--pbmit-white-color);
+    font-size: 20px;
+    margin-top: 50px;
 }
 .pbminfotech-ele-fid-style-2:first-child{
     border-right: 1px solid #2E3D49;

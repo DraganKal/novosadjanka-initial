@@ -64,8 +64,8 @@
 
 .pbmit-heading-subheading .pbmit-title {
     font-family: var(--pbmit-heading-typography-font-family);
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 26px;
+    line-height: 40px;
     letter-spacing: -.5px;
     color: var(--pbmit-global-color);
     text-transform: none;
@@ -2496,7 +2496,7 @@ ul.pbmit-timelist-list li {
 
 .pbmit-title-bar-wrapper {
     background-color: transparent;
-    background-image: url(../images/title-01.jpg);
+    background-image: url(../images/bkg1920x400.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -2527,7 +2527,7 @@ ul.pbmit-timelist-list li {
     font-weight: 600;
     font-size: 46px;
     letter-spacing: -.5px;
-    color: var(--pbmit-white-color);
+    color: var(--pbmit-global-color);
     text-transform: none;
     font-style: normal;
     margin-bottom: 5px;
@@ -2540,7 +2540,7 @@ ul.pbmit-timelist-list li {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: var(--pbmit-white-color);
+    color: var(--pbmit-global-color);
     text-transform: none;
     font-style: normal;
     opacity: .9;
@@ -3644,3 +3644,118 @@ ul.list-group .list-group-item i {
     transform: scale(1) translateX(-50%) translateY(0%);
     -webkit-transform: scale(1) translateX(-50%) translateY(0%)
 }
+
+/* CUSTOM */
+
+.margin-b-5 {
+    margin-bottom: 5px !important;
+}
+
+.margin-b-40 {
+    margin-bottom: 40px;
+}
+
+.color-main {
+    color: var(--pbmit-global-color) !important;
+}
+
+
+.membership-container {
+transform: translateY(-2px);
+}
+
+
+.btn-outline {
+border: 2px solid var(--pbmit-global-color);
+color: var(--pbmit-global-color);
+border-radius: 10px;
+padding: 14px 22px;
+text-decoration: none;
+font-weight: 700;
+transition: 0.25s;
+}
+.btn-outline:hover {
+background: var(--pbmit-global-color);
+color: #fff;
+}
+
+
+/* BENEFITS SECTION */
+.membership-benefits {
+padding: 60px 0;
+}
+
+
+.membership-benefits h2 {
+font-size: 2.3rem;
+margin-bottom: 10px;
+}
+
+
+.membership-benefits .sub {
+max-width: 70ch;
+opacity: 0.85;
+margin-bottom: 35px;
+}
+
+
+/* GRID */
+.benefits-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 26px;
+}
+
+
+.benefit-card {
+padding: 26px;
+border-radius: 18px;
+background: var(--gray-color-main);
+border: 1px solid var(--pbmit-global-color);
+box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+transition: 0.25s;
+}
+.benefit-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+
+.icon-wrapper {
+width: 50px;
+height: 50px;
+border-radius: 14px;
+background: color-mix(in srgb, var(--pbmit-global-color) 18%, transparent);
+display: grid;
+place-items: center;
+font-size: 26px;
+margin-bottom: 14px;
+}
+
+
+/* CHECKLIST */
+.benefits-checklist ul {
+margin-top: 40px;
+list-style: none;
+padding: 0;
+display: grid;
+gap: 12px;
+}
+
+
+.benefits-checklist li {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 14px;
+border-radius: 12px;
+background: var(--gray-color-main);
+border: 1px solid var(--pbmit-global-color);
+}
+
+
+.tick {
+width: 28px;
+height: 28px;
+border-radius: 8px;
+background: var(--pbmit-global-color)};
