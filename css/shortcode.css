@@ -1855,7 +1855,7 @@
     line-height: normal;
     font-weight: 400;
     font-style: normal;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .header-style-1 .pbmit-header-button a {
@@ -3657,6 +3657,10 @@ ul.list-group .list-group-item i {
 
 .color-main {
     color: var(--pbmit-global-color) !important;
+}
+
+.site-navigations {
+    background-color: var(--pbmit-global-color);
 }
 
 
