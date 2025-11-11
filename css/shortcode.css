@@ -3663,6 +3663,9 @@ ul.list-group .list-group-item i {
     background-color: var(--pbmit-global-color);
 }
 
+.sticky-header .site-navigations {
+    background-color: #fff;
+}
 
 .membership-container {
 transform: translateY(-2px);
