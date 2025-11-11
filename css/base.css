@@ -16,6 +16,12 @@ INDEX:
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 
+
+@font-face {
+    font-family: 'AmsterdamFour';
+    src: url('../fonts/amsterdam_four_400.ttf') format('truetype');
+}
+
 :root {
     /* --pbmit-global-color:  #c3002f; */
     --pbmit-global-color: #99b6d4;
@@ -32,6 +38,8 @@ INDEX:
     --pbmit-global-color-light-4: #c2d3e5;
     --pbmit-global-color-light-5: #ccdbea;
     --pbmit-global-color-light-6: #d6e2ee;
+
+    --gray-color-main: #f2eee5;
 
     --pbmit-secondary-color: #222d35;
     --pbmit-light-color: #f9f9f9;
@@ -54,6 +62,8 @@ INDEX:
     --pbmit-btn-typography-variant: 600;
     --pbmit-btn-typography-font-size: 14px;
     --pbmit-btn-typography-line-height: 18px;
+
+    --border-radius: 10px;
 }
 
 /*----------------------------------------*/
@@ -559,7 +569,7 @@ body .pbmit-bg-color-global {
 }
 
 body .pbmit-bg-color-secondary {
-    background-color: var(--pbmit-secondary-color);
+    background-color: var(--gray-color-main);
 }
 
 body .pbmit-bg-color-light {
@@ -1266,3 +1276,15 @@ body .scroll-to-top:hover {
 }
 
 /* CUSTOM */
+
+.text-main {
+    color: var(--pbmit-global-color) !important;
+}
+
+.text-25 {
+    font-size: 25px;
+}
+
+.font-amsterdam {
+    font-family: 'AmsterdamFour', sans-serif !important;
+}
