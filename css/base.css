@@ -735,21 +735,21 @@ body .pbmit-bg-color-white {
     line-height: 120px;
     letter-spacing: .5px;
     text-transform: none;
-    color: var(--pbmit-global-color-dark-5);
+    color: #fff;
     text-transform: uppercase;
     font-family: var(--pbmit-heading-typography-font-family);
 }
 
 .site-navigations ul li.active>a {
-    color: var(--pbmit-global-color);
+    color: var(--gray-color-main);
 }
 
 .site-navigations ul.navigation>li>a:hover {
-    color: var(--pbmit-global-color);
+    color: var(--gray-color-main);
 }
 
 .site-navigation ul.navigation>li>a:hover:after {
-    color: var(--pbmit-global-color);
+    color: var(--gray-color-main);
 }
 
 .site-navigation ul.navigation a {
