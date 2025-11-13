@@ -918,6 +918,19 @@ body .pbmit-bg-color-white {
 .sticky-header .site-navigations ul.navigation>li>a {
     height: 90px;
     line-height: 90px;
+    color: var(--pbmit-global-color);
+}
+
+.sticky-header .site-navigations ul.navigation>li>a:hover {
+    height: 90px;
+    line-height: 90px;
+    color: var(--pbmit-global-color-dark-3);
+}
+
+.sticky-header .site-navigations ul.navigation>li.active>a {
+    height: 90px;
+    line-height: 90px;
+    color: var(--pbmit-global-color-dark-3);
 }
 
 .site-header-menu {

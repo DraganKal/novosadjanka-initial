@@ -41,7 +41,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     background: var(--bg-light);
     color: var(--text-dark);
     min-height: 100vh;
