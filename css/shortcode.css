@@ -152,7 +152,7 @@
     padding-right: 0px;
     background: #fff;
     font-weight: 700 !important;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .pbmit-ihbox-style-2 .pbmit-ihbox-headingicon {
@@ -340,11 +340,11 @@
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 0;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .pbmit-ihbox-style-6 .pbmit-ihbox-box-number {
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     padding-right: 5px;
     font-weight: 600;
     color: var(--pbmit-global-color);
@@ -601,7 +601,7 @@
     font-size: 40px;
     font-weight: 700 !important;
     margin-right: 25px;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     color: var(--pbmit-global-color);
 }
 
@@ -961,7 +961,7 @@
     position: relative;
     padding-left: 45px;
     font-weight: 600;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .pbmit-port-cat:before,
@@ -1182,7 +1182,7 @@
     font-weight: 500 !important;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 /** Style 1 **/
@@ -1223,7 +1223,7 @@
     display: block;
     color: #fff;
     text-transform: uppercase;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     line-height: 36px;
     font-size: 18px;
     line-height: 18px;
@@ -1263,7 +1263,7 @@
     line-height: 23px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     color: var(--pbmit-global-color);
 }
 
@@ -1358,7 +1358,7 @@
     display: block;
     color: #fff;
     text-transform: uppercase;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     line-height: 36px;
     font-size: 18px;
     line-height: 18px;
@@ -1397,7 +1397,7 @@
 .pbmit-testimonial-style-2 blockquote,
 .pbmit-testimonial-style-1 blockquote,
 .pbmit-testimonial-style-3 blockquote {
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     font-weight: normal;
     font-weight: 400;
     font-style: normal;
@@ -1612,7 +1612,7 @@
     right: -10px;
     opacity: 0.1;
     font-weight: 700;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     transform: rotate(180deg);
     color: var(--pbmit-global-color);
 }
@@ -1875,15 +1875,16 @@
 }
 
 .header-style-1 .pbmit-header-button a:before {
-    content: "\e848";
-    font-family: 'pbminfotech-base-icons';
+    content: none;
+    /* content: "\e848"; */
+    /* font-family: 'pbminfotech-base-icons';
     font-size: 45px;
     line-height: 45px;
     top: 3px;
     position: absolute;
     left: 0;
     color: #fff;
-    font-weight: normal;
+    font-weight: normal; */
 }
 
 .header-style-1 .pbmit-header-button-text-1 {
@@ -1969,7 +1970,7 @@
 }
 
 .pbmit-header-box-title {
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 27px;
@@ -1981,7 +1982,7 @@
 }
 
 .pbmit-header-box-content {
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
@@ -2176,12 +2177,12 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .header-style-3 .pbmit-header-button .pbmit-header-button-text-2 {
     font-size: 20px;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .header-style-3 .sticky-header .site-title,
@@ -2214,12 +2215,12 @@
 
 .footer.site-footer {
     color: rgba(255, 255, 255, .9);
-    background-color: var(--pbmit-blackish-color);
-    background-image: url(../images/footer-patten-bg.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-    background-attachment: scroll;
+    background-color: var(--pbmit-global-color);
+    /* background-image: url(../images/footer-patten-bg.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center top; */
+    /* background-size: contain; */
+    /* background-attachment: scroll; */
 }
 
 .footer-wrap.pbmit-footer-big-area {
@@ -2247,7 +2248,7 @@
     letter-spacing: -.5px;
     font-weight: 500;
     color: var(--pbmit-global-color);
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .pbmit-footer-contact-info-inner .pbmit-label {
@@ -2277,7 +2278,7 @@
 }
 
 .site-footer .widget-title {
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 26px;
@@ -2337,7 +2338,7 @@
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 0;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .footer-newsletter-links button:before,
@@ -2615,7 +2616,7 @@ ul.pbmit-timelist-list li {
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .progress {
@@ -2973,7 +2974,7 @@ ul.pbmit-timelist-list li {
     padding-bottom: calc(12px/2);
     background-color: transparent !important;
     border: none;
-    font-family: "Roboto", Sans-serif;
+    font-family: "Newsreader", Sans-serif;
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -3061,7 +3062,7 @@ ul.list-group .list-group-item i {
     position: relative;
     margin: 0 auto 30px;
     display: inline-block;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .pbmit-pricing-table-box .pbminfotech-ptable-price {
@@ -3268,7 +3269,7 @@ ul.list-group .list-group-item i {
 
 .pbmit-sortable-list a {
     font-size: 16px;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
     font-weight: 600;
 }
 
@@ -3367,7 +3368,8 @@ ul.list-group .list-group-item i {
     background: #ccdbea;
     /* background:rgba(168, 33, 33, 0.5); */
     cursor: pointer;
-    box-sizing: content-box
+    box-sizing: content-box;
+    border-radius: 10px;
 }
 
 .custom .tp-bullet.rs-touchhover,
@@ -3376,41 +3378,42 @@ ul.list-group .list-group-item i {
 }
 
 .header-style-1 .tparrows {
-    bottom: -120px !important;
+    /* bottom: -120px !important;
     top: auto !important;
     width: 60px !important;
-    background-color: transparent !important;
+    background-color: transparent !important; */
+    display: none !important;
 }
 
-.header-style-1 .custom.tparrows.tp-rightarrow {
+/* .header-style-1 .custom.tparrows.tp-rightarrow {
     text-align: right;
     padding-right: 10px;
-}
+} */
 
-.header-style-1 .custom.tparrows.tp-leftarrow:after {
+/* .header-style-1 .custom.tparrows.tp-leftarrow:after {
     content: "BACK" !important;
     margin-left: 10px;
-}
+} */
 
-.header-style-1 .custom.tparrows.tp-leftarrow:before {
+/* .header-style-1 .custom.tparrows.tp-leftarrow:before {
     content: "\E845" !important;
     font-family: "pbminfotech-base-icons" !important;
     left: 0;
-}
+} */
 
-.header-style-1 .custom.tparrows.tp-rightarrow:after {
+/* .header-style-1 .custom.tparrows.tp-rightarrow:after {
     content: "NEXT" !important;
     margin-right: 10px;
-}
+} */
 
-.header-style-1 .custom.tparrows.tp-rightarrow:after {
+/* .header-style-1 .custom.tparrows.tp-rightarrow:after {
     color: #fff !important;
-}
+} */
 
-.header-style-1 .custom.tparrows.tp-leftarrow {
+/* .header-style-1 .custom.tparrows.tp-leftarrow {
     text-align: left;
     padding-left: 10px;
-}
+} */
 
 .header-style-1 .custom.tparrows.tp-leftarrow:after,
 .header-style-1 .custom.tparrows.tp-rightarrow:after {
@@ -3660,6 +3663,7 @@ ul.list-group .list-group-item i {
 }
 
 .site-navigations {
+    border-radius: 20px;
     background-color: var(--pbmit-global-color);
 }
 
@@ -3668,21 +3672,75 @@ ul.list-group .list-group-item i {
 }
 
 .membership-container {
-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 
 .btn-outline {
-border: 2px solid var(--pbmit-global-color);
-color: var(--pbmit-global-color);
-border-radius: 10px;
-padding: 14px 22px;
-text-decoration: none;
-font-weight: 700;
-transition: 0.25s;
-}
-.btn-outline:hover {
-background: var(--pbmit-global-color);
-color: #fff;
+    border: 2px solid var(--pbmit-global-color);
+    color: var(--pbmit-global-color);
+    border-radius: 10px;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s;
 }
 
+.btn-outline:hover {
+    background: var(--pbmit-global-color);
+    color: #fff;
+}
+
+.header-login-btn {
+    margin-left: 25px;
+}
+
+.btn-prijava {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #ffffff;
+    /* belo dugme */
+    color: #7d9fc3;
+    /* tvoja plava */
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    transition: all 0.25s ease;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-prijava:hover {
+    background-color: #f0f4fa;
+    color: #5c7fa6;
+    border-color: #ffffff;
+}
+
+.sticky-header .btn-prijava {
+    background-color: var(--pbmit-global-color);
+    color: var(--pbmit-white-color);
+    border: none;
+}
+
+.wrapper-custom {
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    padding: 20px 30px !important;
+    text-align: center;
+    background-color: var(--pbmit-global-color);
+    border-radius: 5px;
+}
+
+.wrapper-custom span {
+    font-size: 25px !important;
+}
+
+.kupi-button {
+    font-size: 25px;
+    padding: 10px 30px;
+    color: var(--pbmit-white-color);
+    background: var(--pbmit-global-color);
+    border-radius: 10px;
+}

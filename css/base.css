@@ -70,7 +70,7 @@ INDEX:
 /* 00 - General 
 /*----------------------------------------*/
 html {
-    font-family: sans-serif;
+    font-family: 'Newsreader' !important;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -409,7 +409,7 @@ a:hover {
 
 a.link-btn,
 .link-btn a {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Newsreader", Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -819,7 +819,7 @@ body .pbmit-bg-color-white {
 }
 
 .main-menu .navigation>li>ul a {
-    color: #0c121d;
+    color: var(--pbmit-global-color);
     padding: 15px 30px;
     display: block;
     font-weight: 600;
@@ -827,7 +827,7 @@ body .pbmit-bg-color-white {
     line-height: 150%;
     margin: 0;
     text-transform: uppercase;
-    font-family: Rajdhani, sans-serif;
+    font-family: 'Newsreader', sans-serif;
 }
 
 .main-menu .navigation>li>ul>li a:before {

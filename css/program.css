@@ -1,0 +1,691 @@
+/* Glavni wrap za ovu stranicu */
+.program-page {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Sekcije */
+.program-section {
+  padding: 4rem 0;
+}
+
+.program-section-alt {
+  /* background-color: var(--gray-color-main); */
+
+  /* Parallax background */
+  background-image:
+    /* overlay boja preko slike */
+    linear-gradient(rgba(153, 182, 212, 0.80),
+      /* tvoja plava, providna */
+      rgba(153, 182, 212, 0.80)),
+    url("../images/bkg-par.png");
+  /* <-- promeni putanju */
+
+  background-attachment: fixed;
+  /* parallax efekat */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* malo više “air”-a oko sadržaja */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.program-section-alt-grey {
+  /* Parallax background */
+  background-image:
+    /* overlay boja preko slike */
+    linear-gradient(rgba(242, 238, 229, 0.80),
+      rgba(242, 238, 229, 0.80)), url("../images/bkg-par.png")
+    /* <-- promeni putanju */
+}
+
+.section-header {
+  max-width: 760px;
+  margin: 0 auto 3rem auto;
+  text-align: left;
+}
+
+.section-header h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* HERO */
+
+.program-hero {
+  padding: 4rem 0 2rem;
+}
+
+.program-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.program-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Desni plavi box */
+
+.program-hero-card {
+  background-color: var(--pbmit-global-color);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.program-hero-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+  opacity: 0.85;
+}
+
+.program-hero-highlight {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.program-hero-row+.program-hero-row {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.program-hero-row h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+/* Dvokolonski layout */
+
+.program-two-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+  gap: 3rem;
+}
+
+.program-two-columns h2,
+.program-two-columns h3 {
+  margin-bottom: 1rem;
+}
+
+.support-pillars {
+  margin-top: 2rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 8px;
+  background-color: var(--gray-color-main);
+}
+
+.support-pillars h3 {
+  margin-bottom: 0.75rem;
+}
+
+.support-pillars ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.support-pillars li+li {
+  margin-top: 0.5rem;
+}
+
+/* Moduli – kartice */
+
+.modules-grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .modules-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .modules-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.module-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.75rem 1.75rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.module-number {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--pbmit-global-color);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.module-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+/* Paketi */
+
+.program-packages {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .program-packages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.package-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.package-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.package-card ul {
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+.package-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.package-price {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+/* Tabela radionica */
+
+.program-table-wrapper {
+  margin-top: 1.5rem;
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.program-table th,
+.program-table td {
+  padding: 0.75rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.program-table thead {
+  background-color: var(--gray-color-main);
+}
+
+.program-table th {
+  font-weight: 600;
+}
+
+.program-total,
+.package-total {
+  margin-top: 0.75rem;
+}
+
+.package-total {
+  margin-top: 0.75rem;
+}
+
+.package-total strong {
+  font-weight: 600;
+}
+
+/* Godišnja struktura */
+
+.year-structure {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .year-structure {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+  }
+}
+
+.year-structure ul {
+  /* padding-left: 1.2rem; */
+}
+
+.months-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .months-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.month-block {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.month-block h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsivnost */
+
+@media (max-width: 991px) {
+
+  .program-hero-inner,
+  .program-two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .program-hero-card {
+    order: 2;
+  }
+}
+
+/* Mali razmaci na mobilnim uređajima */
+
+@media (max-width: 576px) {
+
+  .program-section,
+  .program-hero {
+    padding: 3rem 0;
+  }
+
+  .package-card,
+  .module-card,
+  .month-block,
+  .support-pillars,
+  .program-hero-card {
+    padding: 1.5rem;
+  }
+}
+
+/* SEKCIJA RASPOREDA – BOJE I FONT VELIČINE */
+.program-year {
+  color: var(--pbmit-global-color);
+}
+
+.program-year .section-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--pbmit-global-color);
+}
+
+.program-year .section-header p {
+  font-size: 1.05rem;
+  max-width: 760px;
+}
+
+.program-year h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  color: var(--pbmit-global-color);
+}
+
+.program-year h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--pbmit-global-color);
+}
+
+.program-year p,
+.program-year li {
+  font-size: 1.02rem;
+}
+
+/* GORNJI TEKST */
+.year-structure {
+  display: block;
+  /* više nema dve kolone levo/desno */
+}
+
+.year-intro {
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+
+.year-intro ul {
+  padding-left: 1.2rem;
+}
+
+/* GRID MESECI – 4 U REDU NA DESKTOPU */
+.months-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* 1 u redu na vrlo malim ekranima */
+@media (min-width: 576px) {
+  .months-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 4 u redu na većim ekranima */
+@media (min-width: 992px) {
+  .months-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* KARTICE MESECI */
+.month-block {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* JUL–AVGUST ZAUZIMA DVE KOLONE NA DESKTOPU */
+.month-span-2 {
+  grid-column: span 2;
+}
+
+/* Na manjim ekranima neka zauzima samo jednu kolonu da bi bilo čitljivo */
+@media (max-width: 991.98px) {
+  .month-span-2 {
+    grid-column: span 1;
+  }
+}
+
+/* Malo zbijeni razmaci na telefonima */
+@media (max-width: 576px) {
+  .program-year .section-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .month-block {
+    padding: 1.2rem 1.3rem;
+  }
+}
+
+/* GRID ostaje kao što smo već podesili (4 u redu na desktopu) */
+
+/* Unutrašnjost kartice – "kalendar" osećaj */
+
+.month-block {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.6rem 1.7rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.month-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.7rem;
+}
+
+.month-name {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--pbmit-global-color);
+  margin-bottom: 0.15rem;
+}
+
+.month-theme {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--pbmit-global-color);
+}
+
+.month-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.month-items li+li {
+  margin-top: 0.5rem;
+}
+
+.month-item-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--pbmit-global-color);
+  margin-bottom: 0.05rem;
+}
+
+.month-item-desc {
+  display: block;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* Jul–Avgust kartica i dalje zauzima 2 kolone na desktopu */
+.month-span-2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 991.98px) {
+  .month-span-2 {
+    grid-column: span 1;
+  }
+}
+
+/* Blago smanjenje na vrlo malim ekranima */
+@media (max-width: 576px) {
+  .month-block {
+    padding: 1.3rem 1.4rem;
+  }
+
+  .month-theme {
+    font-size: 1rem;
+  }
+}
+
+.month-block {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.6rem 1.7rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: var(--pbmit-global-color);
+  /* nema crne */
+}
+
+/* zaglavlje meseca */
+
+.month-header {
+  border-bottom: 1px solid rgba(153, 182, 212, 0.4);
+  /* suptilna plava linija */
+  padding-bottom: 0.7rem;
+}
+
+.month-name {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--pbmit-global-color);
+  margin-bottom: 0.15rem;
+}
+
+.month-theme {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--pbmit-global-color);
+}
+
+/* lista stavki */
+
+.month-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.month-items li+li {
+  margin-top: 0.7rem;
+}
+
+/* label (RADIONICA UŽIVO, MASTERCLASS…) */
+
+.month-item-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--pbmit-global-color);
+}
+
+/* datum – stoji iznad opisa, kao “badge” */
+
+.month-item-date {
+  display: inline-block;
+  margin-top: 0.15rem;
+  margin-bottom: 0.2rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background-color: var(--gray-color-main);
+  color: var(--pbmit-global-color);
+}
+
+/* opis ispod datuma */
+
+.month-item-desc {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--pbmit-global-color);
+  opacity: 0.85;
+  /* malo svetlije da ne “urla” */
+}
+
+/* Jul–Avgust i dalje zauzima dve kolone na desktopu */
+
+.month-span-2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 991.98px) {
+  .month-span-2 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .month-block {
+    padding: 1.3rem 1.4rem;
+  }
+
+  .month-theme {
+    font-size: 1rem;
+  }
+}
+
+
+/* da kartice ostanu čitljive iznad slike */
+.program-section-alt .module-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* po želji malo jači naslov da “izbije” iz pozadine */
+.program-section-alt .section-header {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 24px 32px;
+  border-radius: 16px;
+}
+
+.year-intro.centered-intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.year-intro-inner {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 40px 45px;
+  text-align: left;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+.year-intro-inner h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--pbmit-global-color);
+}
+
+.year-intro-inner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.year-intro-inner ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--pbmit-global-color);
+  line-height: 1.6;
+}
+
+.year-intro-inner strong {
+  font-weight: 600;
+  color: var(--pbmit-global-color);
+}
