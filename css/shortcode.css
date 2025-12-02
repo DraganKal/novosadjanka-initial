@@ -654,7 +654,7 @@
 }
 
 .pbmit-fld-active.pbminfotech-ele-fid-style-1 .pbmit-fid span {
-    color: #222631;
+    color: var(--gray-color-main);
     position: relative;
     left: -16px;
 }
@@ -905,9 +905,9 @@
     color: var(--pbmit-global-color);
 }
 
-.pbmit-service-style-3 .pbmit-service-cat:before {
+/* .pbmit-service-style-3 .pbmit-service-cat:before {
     background-color: var(--pbmit-global-color);
-}
+} */
 
 .pbmit-service-style-3 .pbmit-service-title {
     position: relative;
@@ -948,10 +948,10 @@
     background-color: #fff;
 }
 
-.pbmit-service-style-3:hover .pbmit-service-cat a,
+/* .pbmit-service-style-3:hover .pbmit-service-cat a,
 .pbmit-service-style-3:hover .pbmit-service-title a {
     color: #fff;
-}
+} */
 
 .pbmit-port-cat,
 .pbmit-service-cat {
@@ -959,12 +959,12 @@
     letter-spacing: 2px;
     font-size: 14px;
     position: relative;
-    padding-left: 45px;
+    /* padding-left: 45px; */
     font-weight: 600;
     font-family: 'Newsreader', sans-serif;
 }
 
-.pbmit-port-cat:before,
+/* .pbmit-port-cat:before,
 .pbmit-service-cat:before {
     position: absolute;
     left: 0;
@@ -973,7 +973,7 @@
     width: 30px;
     height: 1px;
     background-color: #000;
-}
+} */
 
 /*----------------------------------------*/
 /*  05 - Portfolio
@@ -1157,10 +1157,10 @@
     bottom: 30px;
 }
 
-.pbmit-port-cat:before,
+/* .pbmit-port-cat:before,
 .pbmit-service-cat:before {
     background-color: var(--pbmit-global-color);
-}
+} */
 
 /*----------------------------------------*/
 /*  06 - Blog
@@ -1407,7 +1407,8 @@
 .pbmit-testimonial-style-1 .pbminfotech-box-content {
     position: relative;
     padding: 30px 30px 30px;
-    border: 1px solid #3f4f5b;
+    border: 1px solid var(--pbmit-white-color);
+    border-radius: 20px;
 }
 
 .pbmit-testimonial-style-1 .pbminfotech-box-img {
@@ -1476,8 +1477,8 @@
     height: 0px;
     position: absolute;
     border-left: 10px solid transparent;
-    border-right: 10px solid #3f4f5b;
-    border-top: 10px solid #3f4f5b;
+    border-right: 10px solid var(--pbmit-white-color);
+    border-top: 10px solid var(--pbmit-white-color);
     border-bottom: 10px solid transparent;
     left: 16px;
     bottom: -21px;
@@ -1489,8 +1490,8 @@
     height: 0px;
     position: absolute;
     border-left: 10px solid transparent;
-    border-right: 10px solid #222d35;
-    border-top: 10px solid #222d35;
+    border-right: 10px solid var(--pbmit-white-color);
+    border-top: 10px solid var(--pbmit-white-color);
     border-bottom: 10px solid transparent;
     left: 15px;
     bottom: -19px;
@@ -1824,6 +1825,7 @@
 }
 
 .header-style-1:after {
+    border-radius: 20px;
     content: '';
     width: 40%;
     height: 100%;
@@ -1923,6 +1925,7 @@
 .header-style-1 .pbmit-slider-area {
     margin-left: 100px;
     margin-right: 100px;
+    border-radius: 20px;
 }
 
 .header-style-1 .sticky-header .site-title {
@@ -2427,6 +2430,7 @@ ul.pbmit-timelist-list li {
     text-align: center;
     color: #333;
     border-radius: 50%;
+    color: var(--pbmit-global-color);
 }
 
 .footer-social-links .pbmit-social-links li a:hover {

@@ -1,7 +1,8 @@
 /* Glavni wrap za ovu stranicu */
 .program-page {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
+  color: var(--pbmit-global-color-dark-2);
 }
 
 /* Sekcije */
@@ -18,7 +19,7 @@
     linear-gradient(rgba(153, 182, 212, 0.80),
       /* tvoja plava, providna */
       rgba(153, 182, 212, 0.80)),
-    url("../images/bkg-par.png");
+    url("../images/bkg-parallex-2.png");
   /* <-- promeni putanju */
 
   background-attachment: fixed;
@@ -37,7 +38,7 @@
   background-image:
     /* overlay boja preko slike */
     linear-gradient(rgba(242, 238, 229, 0.80),
-      rgba(242, 238, 229, 0.80)), url("../images/bkg-par.png")
+      rgba(242, 238, 229, 0.80)), url("../images/bkg-parallex-1.png")
     /* <-- promeni putanju */
 }
 
@@ -688,4 +689,155 @@
 .year-intro-inner strong {
   font-weight: 600;
   color: var(--pbmit-global-color);
+}
+
+.cena {
+  font-size: 20px;
+  font-weight: 800 !important;
+  color: var(--pbmit-global-color-dark-2) !important;
+}
+
+/* ---------------------------------------------------------
+   PROGRAM INTRO SPLIT SECTION (Clanstvo Page)
+--------------------------------------------------------- */
+
+.program-intro-split {
+  padding: 80px 0;
+  background-color: #fff;
+  /* Or match the previous section's background */
+}
+
+.program-intro-split .section-header {
+  margin-bottom: 0;
+  /* Remove default margin since it's in a column now */
+  text-align: left;
+}
+
+.program-intro-split .section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.program-intro-split .section-header p {
+  font-size: 1.1rem;
+  color: var(--pbmit-text-color);
+  max-width: 100%;
+  /* Allow full width in the column */
+}
+
+.year-intro-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.year-intro-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--pbmit-global-color);
+  font-weight: 700;
+}
+
+.year-intro-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.year-intro-card ul li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--pbmit-text-color);
+}
+
+.year-intro-card ul li::before {
+  content: "•";
+  color: var(--pbmit-global-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.year-intro-card ul li strong {
+  color: var(--pbmit-global-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .program-intro-split {
+    padding: 60px 0;
+  }
+
+  .program-intro-split .section-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .year-intro-card {
+    padding: 30px;
+  }
+}
+
+/* MEMBERSHIP PROMO BANNER */
+.membership-promo-banner {
+  background: linear-gradient(135deg, var(--pbmit-global-color) 0%, #8faecf 100%);
+  color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(153, 182, 212, 0.25);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.membership-promo-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.membership-promo-banner p {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.membership-promo-banner .promo-highlight {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  display: block;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* OLD PRICE STYLING */
+.old-price {
+  font-size: 1.1rem;
+  color: var(--pbmit-global-color);
+  text-decoration: line-through;
+  margin-bottom: -10px;
+  font-weight: 500;
+}
+
+.text-paketi-desc {
+  color: var(--pbmit-global-color);
+  font-size: 20px;
+  font-weight: 600;
 }

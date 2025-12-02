@@ -147,7 +147,7 @@ blockquote small:before {
 }
 
 .pbmit-blc-style-1 .pbmit-btn {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .who_we-col-1 {
@@ -172,7 +172,7 @@ blockquote small:before {
 }
 
 .who_we_are-bg {
-    background-image: url(../images/cropped-530x750.png);
+    background-image: url(../images/img530x750.png);
     background-color: transparent;
     background-position: 50% 0%;
     background-repeat: no-repeat;
@@ -214,14 +214,15 @@ blockquote small:before {
 
 .testimonial-content-one {
     background-image: url(../images/homepage-1/dot-map.png);
-    background-color: var(--pbmit-secondary-color);
+    background-color: var(--pbmit-global-color);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
     border-radius: 0px;
     margin-top: 100px;
-    margin-left: -205px;
+    /* margin-left: -205px; */
     padding: 60px 50px 60px 66px;
+    border-radius: 20px 0 0 20px;
 }
 
 .testimonial-content-one .col-xl-8.testimonial-col {
@@ -255,24 +256,24 @@ blockquote small:before {
 
 .appointment-section-one .pbmit-newsletter input {
     height: 60px;
+    border-radius: 999px 0 0 999px;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
 }
 
 .appointment-section-one .pbmit-newsletter button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    height: 60px;
+    border-radius: 0 999px 999px 0;
     border: none;
+    padding: 10px 24px;
     font-size: 14px;
-    line-height: 18px;
     font-weight: 600;
-    border-radius: 0;
-    padding: 21px 40px;
-    padding-left: 65px;
-    font-family: 'Newsreader', sans-serif;
-    color: var(--pbmit-white-color);
-    background-color: var(--pbmit-global-color) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .input-group>.form-control:focus,
@@ -651,7 +652,7 @@ blockquote small:before {
     display: block;
     z-index: -1;
     margin-left: 250px;
-    background-color: var(--pbmit-global-color);
+    background-color: var(--gray-color-main);
 }
 
 .list-group-content .list-group-borderless .list-group-item {
@@ -2172,4 +2173,94 @@ form button {
     .kako-radimo-clean .kako-radimo-item {
         margin-bottom: 40px;
     }
+}
+
+.pad-l-20 {
+    padding-left: 20px;
+}
+
+.bkg-color-blue {
+    background-color: var(--pbmit-global-color);
+}
+
+.bkg-color-gray {
+    background-color: var(--gray-color-main);
+}
+
+/* Custom Service Cards */
+.pbmit-service-style-3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-text {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #f2eee5;
+    min-height: 440px;
+    flex-grow: 1;
+}
+
+.service-card-text:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--pbmit-global-color);
+}
+
+.service-card-text .pbmit-service-cat {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--pbmit-global-color);
+    font-weight: 600;
+}
+
+.service-card-text .pbmit-service-cat a {
+    color: var(--pbmit-global-color);
+}
+
+.service-card-text .pbmit-service-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.service-card-text .pbmit-service-title a {
+    color: var(--pbmit-global-color-dark-2);
+}
+
+.service-card-text .pbmit-service-title a:hover {
+    color: var(--pbmit-global-color);
+}
+
+.service-card-desc {
+    margin-bottom: 30px;
+    color: #7a92aa;
+    font-size: 16px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.service-card-btn {
+    margin-top: auto;
+}
+
+.service-card-btn .pbmit-btn {
+    padding: 12px 30px;
+    font-size: 13px;
+    border-radius: 30px;
+}
+
+.color-white {
+    color: var(--pbmit-white-color) !important;
 }
