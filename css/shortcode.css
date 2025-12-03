@@ -2677,7 +2677,7 @@ ul.pbmit-timelist-list li {
     font-weight: 600;
     line-height: 1;
     background-color: transparent;
-    border-bottom: 1px solid #222d35;
+    border-bottom: 1px solid var(--pbmit-global-color-dark-2);
 }
 
 .accordion .accordion-item h2:hover .accordion-button {
@@ -2693,7 +2693,7 @@ ul.pbmit-timelist-list li {
     padding: 25px 0 15px;
     background: none;
     outline: none;
-    color: var(--pbmit-secondary-color);
+    color: var(--pbmit-global-color-dark-2);
     transition: color .2s ease-in-out;
 }
 
@@ -2713,7 +2713,7 @@ ul.pbmit-timelist-list li {
 }
 
 .accordion-item.active .accordion-button {
-    border-bottom: 2px solid #222d35;
+    border-bottom: 2px solid var(--pbmit-global-color);
     font-weight: 700;
 }
 
@@ -2729,7 +2729,7 @@ ul.pbmit-timelist-list li {
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--pbmit-blackish-color);
+    color: var(--pbmit-global-color);
     background-color: transparent;
     box-shadow: none;
     transition: none;
