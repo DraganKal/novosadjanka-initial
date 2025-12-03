@@ -2678,7 +2678,7 @@ ul.pbmit-timelist-list li {
     font-weight: 600;
     line-height: 1;
     background-color: transparent;
-    border-bottom: 1px solid var(--pbmit-global-color-dark-2);
+    border-bottom: 1px solid var(--pbmit-global-color);
 }
 
 .accordion .accordion-item h2:hover .accordion-button {
