@@ -2670,6 +2670,7 @@ ul.pbmit-timelist-list li {
 .accordion-item {
     border: none;
     color: var(--pbmit-blackish-color);
+    background-color: var(--bg-light);
 }
 
 .accordion .accordion-item h2 {
