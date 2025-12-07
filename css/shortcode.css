@@ -1815,7 +1815,7 @@
 
 /** Header Style 1 **/
 .home .header-style-1 {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .home .header-style-1:before {
