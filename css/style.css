@@ -98,14 +98,14 @@ blockquote small:before {
 
 .pbmit-blc-style-1 blockquote:before {
     position: absolute;
-    content: '"';
+    content: '”';
     font-family: 'Newsreader', sans-serif !important;
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
-    top: -28px;
+    /* top: -28px; */
     left: 0;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
     color: var(--pbmit-global-color);
 }
 
@@ -2310,4 +2310,13 @@ form button {
 
 .text-20 {
     font-size: 20px !important;
+}
+
+.img-per-80 {
+    width: 80% !important;
+}
+
+/* sizings */
+.w-400px {
+    width: 400px !important;
 }

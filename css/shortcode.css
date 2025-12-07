@@ -1193,7 +1193,7 @@
 }
 
 .pbmit-blog-style-1 .post-item {
-    border: 1px solid #eee;
+    border: 1px solid var(--gray-color-main);
     padding: 20px 20px 0;
     height: 560px;
     border-radius: 10px;
