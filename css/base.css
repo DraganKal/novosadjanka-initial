@@ -40,6 +40,7 @@ INDEX:
     --pbmit-global-color-light-6: #d6e2ee;
 
     --gray-color-main: #f2eee5;
+    --brown-color-main: #9c9994;
 
     --pbmit-secondary-color: #222d35;
     --pbmit-light-color: #f9f9f9;
@@ -504,6 +505,13 @@ a.link-btn i,
     border: 2px solid var(--pbmit-global-color);
 }
 
+.button-blue {
+    padding: 16px 24px;
+    background-color: var(--pbmit-global-color);
+    color: var(--pbmit-white-color);
+    border: 2px solid var(--pbmit-global-color);
+}
+
 /* .pbmit-btn-outline span::before {
     transition: all .3s ease-in-out;
     background-color: var(--pbmit-global-color);
@@ -742,15 +750,15 @@ body .pbmit-bg-color-white {
 }
 
 .site-navigations ul li.active>a {
-    color: var(--gray-color-main);
+    color: var(--brown-color-main);
 }
 
 .site-navigations ul.navigation>li>a:hover {
-    color: var(--gray-color-main);
+    color: var(--brown-color-main);
 }
 
 .site-navigation ul.navigation>li>a:hover:after {
-    color: var(--gray-color-main);
+    color: var(--brown-color-main);
 }
 
 .site-navigation ul.navigation a {
@@ -1033,12 +1041,13 @@ body .pbmit-bg-color-white {
     height: 7px;
     width: 7px;
     border: 1px solid #e5e8ef;
-    border-radius: inherit;
+    border-radius: 30px;
     margin: 0 5px;
     outline: none;
     opacity: 1;
     background-color: var(--pbmit-white-color);
 }
+
 
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -1301,4 +1310,22 @@ body .scroll-to-top:hover {
 
 .font-amsterdam {
     font-family: 'AmsterdamFour', sans-serif !important;
+}
+
+.rev-btn,
+.rev-btn:hover {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.text-35 {
+    font-size: 35px;
+}
+
+.pad-l-25 {
+    padding-left: 25px;
+}
+
+.bg-brown {
+    background-color: var(--brown-color-main);
 }
