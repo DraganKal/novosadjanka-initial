@@ -789,7 +789,8 @@ body .pbmit-bg-color-white {
     min-width: 270px;
     box-shadow: 0 10px 40px rgb(0 0 0 / 20%);
     border-bottom: none;
-    border-top: 3px solid var(--pbmit-global-color);
+    /* border-top: 3px solid var(--pbmit-global-color); */
+    border-radius: 10px;
     position: absolute;
     left: 0;
     z-index: 100;
@@ -832,10 +833,11 @@ body .pbmit-bg-color-white {
 
 .main-menu .navigation>li>ul li a {
     border-bottom: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 10px;
 }
 
 .main-menu .navigation>li>ul a {
-    color: var(--pbmit-global-color);
+    color: var(--brown-color-main);
     padding: 15px 30px;
     display: block;
     font-weight: 600;
@@ -846,6 +848,7 @@ body .pbmit-bg-color-white {
     font-family: 'Newsreader', sans-serif;
 }
 
+/* 
 .main-menu .navigation>li>ul>li a:before {
     position: absolute;
     content: '';
@@ -856,20 +859,20 @@ body .pbmit-bg-color-white {
     background-color: transparent;
     -webkit-transition: all .500s ease-in-out;
     transition: all .500s ease-in-out;
-}
+} */
 
-.main-menu .navigation>li>ul>li:hover a:before {
+/* .main-menu .navigation>li>ul>li:hover a:before {
     background-color: rgba(255, 255, 255, .50);
     width: 10px;
-}
+} */
 
 .main-menu .navigation>li>ul li.active a {
-    color: var(--pbmit-global-color);
+    color: var(--brown-color-main);
 }
 
 .main-menu .navigation>li>ul a:hover {
-    background-color: var(--pbmit-global-color);
-    color: var(--pbmit-white-color);
+    background-color: var(--brown-color-main);
+    color: var(--white-color-main);
 }
 
 .main-menu .navigation>li>ul li.active a:hover,
@@ -946,7 +949,7 @@ body .pbmit-bg-color-white {
 .sticky-header .site-navigations ul.navigation>li.active>a {
     height: 90px;
     line-height: 90px;
-    color: var(--pbmit-global-color-dark-3);
+    color: var(--brown-color-main);
 }
 
 .site-header-menu {

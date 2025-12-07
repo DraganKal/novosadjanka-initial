@@ -135,10 +135,12 @@ blockquote small:before {
     z-index: -1;
     margin-right: 210px;
     background-color: var(--pbmit-global-color-light-6);
+    border-radius: 20px;
 }
 
 .about-one-img img {
-    box-shadow: 68px 0px 0px -30px var(--pbmit-global-color);
+    /* box-shadow: 68px 0px 0px -30px var(--pbmit-global-color); */
+    border-radius: 20px;
 }
 
 .pbmit-blc-style-1 .about-us-button {
@@ -179,6 +181,7 @@ blockquote small:before {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 400px 0;
+    border-radius: 20px 0 0 20px;
 }
 
 .counter-one-bg {
@@ -2301,4 +2304,10 @@ form button {
     font-size: 30px !important;
     color: var(--pbmit-white-color);
     text-shadow: 0px 0px 4px rgba(15, 31, 147, 0.2);
+}
+
+/* fonts */
+
+.text-20 {
+    font-size: 20px !important;
 }

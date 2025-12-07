@@ -618,6 +618,7 @@
     position: relative;
     background: #fff;
     padding-top: 45px;
+    border-radius: 20px;
 }
 
 .pbminfotech-ele-fid-style-1 .pbmit-sbox-icon-wrapper {
@@ -2698,7 +2699,7 @@ ul.pbmit-timelist-list li {
     padding: 25px 0 15px;
     background: none;
     outline: none;
-    color: var(--pbmit-global-color-dark-2);
+    color: var(--brown-color-main);
     transition: color .2s ease-in-out;
 }
 

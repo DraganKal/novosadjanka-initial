@@ -1,6 +1,6 @@
 /* Glavni wrap za ovu stranicu */
 .program-page {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--pbmit-global-color-dark-2);
 }
@@ -92,7 +92,7 @@
 }
 
 .program-hero-highlight {
-  font-size: 1.25rem;
+  font-size: 26px !important;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -104,7 +104,7 @@
 }
 
 .program-hero-row h4 {
-  font-size: 0.95rem;
+  font-size: 20px !important;
   margin-bottom: 0.25rem;
   font-weight: 600;
 }
@@ -218,7 +218,7 @@
 
 .package-note {
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -464,7 +464,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
-  color: var(--pbmit-global-color);
+  color: var(--brown-color-main);
   margin-bottom: 0.15rem;
 }
 
@@ -550,7 +550,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
-  color: var(--pbmit-global-color);
+  color: var(--brown-color-main);
   margin-bottom: 0.15rem;
 }
 
@@ -558,7 +558,7 @@
   display: block;
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--pbmit-global-color);
+  color: var(--brown-color-main);
 }
 
 /* lista stavki */
@@ -606,6 +606,7 @@
   font-size: 0.95rem;
   color: var(--pbmit-global-color);
   opacity: 0.85;
+  font-weight: 500;
   /* malo svetlije da ne “urla” */
 }
 
@@ -634,7 +635,7 @@
 
 /* da kartice ostanu čitljive iznad slike */
 .program-section-alt .module-card {
-  background-color: #ffffff;
+  background-color: rgba(242, 238, 229, 0.8);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
@@ -644,7 +645,7 @@
   max-width: 640px;
   margin: 0 auto 40px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(242, 238, 229, 0.8);
   padding: 24px 32px;
   border-radius: 16px;
 }
