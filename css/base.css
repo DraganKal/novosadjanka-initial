@@ -344,7 +344,7 @@ h5,
 h6 {
     font-family: var(--pbmit-heading-typography-font-family);
     font-weight: var(--pbmit-heading-font-variant);
-    color: var(--pbmit-heading-color);
+    color: var(--pbmit-global-color);
 }
 
 h1 {
@@ -502,6 +502,13 @@ a.link-btn i,
     padding: 16px 24px;
     background-color: transparent;
     color: var(--pbmit-global-color);
+    border: 2px solid var(--pbmit-global-color);
+}
+
+.pbmit-btn-outline-blue {
+    padding: 16px 24px;
+    background-color: var(--pbmit-global-color);
+    color: var(--pbmit-white-color);
     border: 2px solid var(--pbmit-global-color);
 }
 
@@ -1328,4 +1335,8 @@ body .scroll-to-top:hover {
 
 .bg-brown {
     background-color: var(--brown-color-main);
+}
+
+.text-brown {
+    color: var(--brown-color-main) !important;
 }

@@ -1829,7 +1829,7 @@
 }
 
 .header-style-1:after {
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 0 0;
     content: '';
     width: 40%;
     height: 100%;
@@ -2678,7 +2678,7 @@ ul.pbmit-timelist-list li {
 }
 
 .accordion .accordion-item h2 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1;
     background-color: transparent;
@@ -2690,7 +2690,7 @@ ul.pbmit-timelist-list li {
 }
 
 .accordion-button {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     border: none;
     border-radius: 0 !important;
@@ -2742,6 +2742,7 @@ ul.pbmit-timelist-list li {
 
 .accordion-body {
     color: var(--pbmit-body-typography-color);
+    font-size: 20px;
     font-weight: 400;
     padding: 10px 0 0;
     border: solid transparent;

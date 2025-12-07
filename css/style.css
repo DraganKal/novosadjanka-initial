@@ -621,7 +621,7 @@ blockquote small:before {
 .success-bg-left {
     position: relative;
     height: 100%;
-    padding: 100px 120px 90px 0px;
+    padding: 100px 120px 80px 0px;
 }
 
 .success-bg-left::before {
@@ -658,7 +658,7 @@ blockquote small:before {
 
 .list-group-content .list-group-borderless .list-group-item {
     color: #fff;
-    font-size: 15px;
+    font-size: 19px;
     padding-bottom: 0;
 }
 
@@ -2274,4 +2274,31 @@ form button {
     background-color: var(--pbmit-global-color);
     height: 110px;
     border-radius: 20px;
+}
+
+.discount-text {
+    position: absolute;
+    top: 0;
+    right: left;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--pbmit-white-color);
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.pricing-cards {
+    border-bottom: none !important;
+}
+
+.month-number {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-weight: 800;
+    font-size: 30px !important;
+    color: var(--pbmit-white-color);
+    text-shadow: 0px 0px 4px rgba(15, 31, 147, 0.2);
 }

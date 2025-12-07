@@ -296,6 +296,7 @@
 }
 
 .month-block {
+  position: relative;
   background-color: #fff;
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
@@ -720,8 +721,8 @@
 }
 
 .program-intro-split .section-header p {
-  font-size: 1.1rem;
-  color: var(--pbmit-text-color);
+  font-size: 20px;
+  color: var(--pbmit-global-color);
   max-width: 100%;
   /* Allow full width in the column */
 }
@@ -751,7 +752,7 @@
   margin-bottom: 1rem;
   position: relative;
   padding-left: 1.5rem;
-  color: var(--pbmit-text-color);
+  color: var(--pbmit-global-color);
 }
 
 .year-intro-card ul li::before {
