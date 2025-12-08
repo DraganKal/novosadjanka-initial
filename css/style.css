@@ -2302,8 +2302,8 @@ form button {
     right: 10px;
     font-weight: 800;
     font-size: 30px !important;
-    color: var(--pbmit-white-color);
-    text-shadow: 0px 0px 4px rgba(15, 31, 147, 0.2);
+    color: var(--pbmit-global-color);
+    /* text-shadow: 0px 0px 4px #a6a198; */
 }
 
 /* fonts */
