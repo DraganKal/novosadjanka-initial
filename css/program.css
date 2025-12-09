@@ -15,10 +15,10 @@
 
   /* Parallax background */
   background-image:
-    /* overlay boja preko slike */
-    linear-gradient(rgba(153, 182, 212, 0.80),
-      /* tvoja plava, providna */
-      rgba(153, 182, 212, 0.80)),
+    /* overlay boja preko slike */ linear-gradient(
+      rgba(153, 182, 212, 0.8),
+      /* tvoja plava, providna */ rgba(153, 182, 212, 0.8)
+    ),
     url("../images/bkg-parallex-2.png");
   /* <-- promeni putanju */
 
@@ -30,16 +30,18 @@
 
   /* malo više “air”-a oko sadržaja */
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .program-section-alt-grey {
   /* Parallax background */
   background-image:
-    /* overlay boja preko slike */
-    linear-gradient(rgba(242, 238, 229, 0.80),
-      rgba(242, 238, 229, 0.80)), url("../images/bkg-parallex-1.png")
-    /* <-- promeni putanju */
+    /* overlay boja preko slike */ linear-gradient(
+      rgba(242, 238, 229, 0.8),
+      rgba(242, 238, 229, 0.8)
+    ),
+    url("../images/bkg-parallex-1.png");
+  /* <-- promeni putanju */
 }
 
 .section-header {
@@ -97,7 +99,7 @@
   margin-bottom: 1.5rem;
 }
 
-.program-hero-row+.program-hero-row {
+.program-hero-row + .program-hero-row {
   margin-top: 1.25rem;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.35);
@@ -139,7 +141,7 @@
   padding: 0;
 }
 
-.support-pillars li+li {
+.support-pillars li + li {
   margin-top: 0.5rem;
 }
 
@@ -237,6 +239,7 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
+  margin-bottom: 30px;
 }
 
 .program-table th,
@@ -256,11 +259,11 @@
 
 .program-total,
 .package-total {
-  margin-top: 0.75rem;
+  /* margin-top: 0.75rem; */
 }
 
 .package-total {
-  margin-top: 0.75rem;
+  /* margin-top: 0.75rem; */
 }
 
 .package-total strong {
@@ -310,7 +313,6 @@
 /* Responsivnost */
 
 @media (max-width: 991px) {
-
   .program-hero-inner,
   .program-two-columns {
     grid-template-columns: 1fr;
@@ -324,7 +326,6 @@
 /* Mali razmaci na mobilnim uređajima */
 
 @media (max-width: 576px) {
-
   .program-section,
   .program-hero {
     padding: 3rem 0;
@@ -481,7 +482,7 @@
   padding: 0;
 }
 
-.month-items li+li {
+.month-items li + li {
   margin-top: 0.5rem;
 }
 
@@ -569,7 +570,7 @@
   padding: 0;
 }
 
-.month-items li+li {
+.month-items li + li {
   margin-top: 0.7rem;
 }
 
@@ -631,7 +632,6 @@
     font-size: 1rem;
   }
 }
-
 
 /* da kartice ostanu čitljive iznad slike */
 .program-section-alt .module-card {
@@ -734,6 +734,7 @@
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.03);
+  font-size: 16px;
 }
 
 .year-intro-card h3 {
@@ -787,7 +788,11 @@
 
 /* MEMBERSHIP PROMO BANNER */
 .membership-promo-banner {
-  background: linear-gradient(135deg, var(--pbmit-global-color) 0%, #8faecf 100%);
+  background: linear-gradient(
+    135deg,
+    var(--pbmit-global-color) 0%,
+    #8faecf 100%
+  );
   color: #fff;
   padding: 3rem 2rem;
   border-radius: 16px;
@@ -802,6 +807,38 @@
   overflow: hidden;
 }
 
+/* STRUCTURE HEADER - SEPARATED */
+.structure-intro {
+  background-color: #fff;
+  padding-bottom: 2rem !important; /* Override general padding */
+}
+
+.structure-header-pure {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.structure-header-pure h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--pbmit-global-color);
+  font-weight: 700;
+}
+
+.structure-header-pure p {
+  font-size: 1.15rem;
+  color: var(--pbmit-global-color-dark-2);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .structure-header-pure h2 {
+    font-size: 2rem;
+  }
+}
+
 .membership-promo-banner::before {
   content: "";
   position: absolute;
@@ -809,7 +846,12 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
 }
 
 .membership-promo-banner p {
@@ -842,4 +884,11 @@
   color: var(--pbmit-global-color);
   font-size: 20px;
   font-weight: 600;
+}
+
+.program-hero-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px !important;
 }
