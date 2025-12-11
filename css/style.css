@@ -280,8 +280,8 @@ blockquote small:before {
   white-space: nowrap;
 }
 
-.input-group > .form-control:focus,
-.input-group > .form-select:focus {
+.input-group>.form-control:focus,
+.input-group>.form-select:focus {
   z-index: 0;
 }
 
@@ -1895,8 +1895,7 @@ blockquote small:before {
 }
 
 .contact-section-iframe {
-  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px)
-    hue-rotate(0deg);
+  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
 
 .contact-section-iframe iframe {
@@ -1998,6 +1997,7 @@ form button {
 
 .novo-footer .footer-top-item i {
   font-size: 26px;
+  padding-right: 6px;
 }
 
 .novo-footer .footer-top-item .label {
@@ -2288,7 +2288,7 @@ form button {
   position: absolute;
   top: 0;
   right: left;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 800;
   color: var(--pbmit-white-color);
 }
@@ -2306,7 +2306,7 @@ form button {
   top: 0;
   right: 10px;
   font-weight: 800;
-  font-size: 30px !important;
+  font-size: 20px !important;
   color: var(--pbmit-global-color);
   /* text-shadow: 0px 0px 4px #a6a198; */
 }

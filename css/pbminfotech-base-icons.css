@@ -25,7 +25,7 @@
 [class*=" pbmit-base-icon-"]:before {
   /* font-size: 25px; */
   font-family: "pbminfotech-base-icons";
-  color: #fff;
+  color: var(--pbmit-global-color);
   font-style: normal;
   font-weight: normal;
   speak: never;
