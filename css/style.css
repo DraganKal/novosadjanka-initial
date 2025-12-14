@@ -2325,3 +2325,8 @@ form button {
 .w-400px {
   width: 400px !important;
 }
+
+/* Text colors */
+.text-blue {
+  color: var(--pbmit-global-color) !important;
+}

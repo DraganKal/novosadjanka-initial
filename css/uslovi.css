@@ -1,0 +1,96 @@
+/* Uslovi Korišćenja Styles */
+
+.terms-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    /* Light background for contrast */
+}
+
+.terms-content {
+    background: #ffffff;
+    padding: 60px 80px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.terms-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--pbmit-global-color, #2e3d49);
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.terms-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--pbmit-secondary-color, #c3002f);
+    border-radius: 2px;
+}
+
+.terms-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--pbmit-global-color, #2e3d49);
+}
+
+.terms-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--pbmit-body-typography-color);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.terms-content a {
+    color: var(--pbmit-global-color, #2e3d49);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.terms-content a:hover {
+    color: var(--pbmit-secondary-color, #c3002f);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .terms-content {
+        padding: 40px;
+    }
+
+    .terms-content h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .terms-section {
+        padding: 60px 0;
+    }
+
+    .terms-content {
+        padding: 30px 20px;
+    }
+
+    .terms-content h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .terms-content h2 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+}
