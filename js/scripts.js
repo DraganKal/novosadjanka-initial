@@ -430,3 +430,28 @@ $("#contact-form").submit(function () {
 
 });
 
+
+/*-------------------------------------
+ Update Programi Link on Mobile
+ -------------------------------------*/
+jQuery(document).ready(function($) {
+    function updateProgramiLink() {
+        var programiLink = $('.main-menu ul.navigation li a').filter(function() {
+            return $(this).text().trim() === "Programi";
+        });
+
+        if (programiLink.length > 0) {
+            if ($(window).width() < 992) {
+                programiLink.attr('href', 'od-nule-do-uspeha.html');
+            } else {
+                programiLink.attr('href', '#');
+            }
+        }
+    }
+
+    updateProgramiLink();
+
+    $(window).resize(function() {
+        updateProgramiLink();
+    });
+});
