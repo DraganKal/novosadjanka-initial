@@ -519,6 +519,8 @@ body {
 
 	.pbmit-blc-style-1 .about-us-button {
 		display: inline-grid;
+		width: 100%;
+		justify-content: center;
 	}
 
 	.pbmit-blc-style-1 .pbmit-btn {
@@ -1093,6 +1095,8 @@ body {
 	/** About Us 2 **/
 	.about-us-two .pbmit-blc-style-1 .about-us-button {
 		display: inline-grid;
+		width: 100%;
+		justify-content: center;
 	}
 
 	.about-us-two .pbmit-blc-style-1 .pbmit-btn.pbmit-btn-outline {
