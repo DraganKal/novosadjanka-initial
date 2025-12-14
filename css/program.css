@@ -15,10 +15,10 @@
 
   /* Parallax background */
   background-image:
-    /* overlay boja preko slike */ linear-gradient(
-      rgba(153, 182, 212, 0.8),
-      /* tvoja plava, providna */ rgba(153, 182, 212, 0.8)
-    ),
+    /* overlay boja preko slike */
+    linear-gradient(rgba(153, 182, 212, 0.8),
+      /* tvoja plava, providna */
+      rgba(153, 182, 212, 0.8)),
     url("../images/bkg-parallex-2.png");
   /* <-- promeni putanju */
 
@@ -36,10 +36,9 @@
 .program-section-alt-grey {
   /* Parallax background */
   background-image:
-    /* overlay boja preko slike */ linear-gradient(
-      rgba(242, 238, 229, 0.8),
-      rgba(242, 238, 229, 0.8)
-    ),
+    /* overlay boja preko slike */
+    linear-gradient(rgba(242, 238, 229, 0.8),
+      rgba(242, 238, 229, 0.8)),
     url("../images/bkg-parallex-1.png");
   /* <-- promeni putanju */
 }
@@ -99,7 +98,7 @@
   margin-bottom: 1.5rem;
 }
 
-.program-hero-row + .program-hero-row {
+.program-hero-row+.program-hero-row {
   margin-top: 1.25rem;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.35);
@@ -141,7 +140,7 @@
   padding: 0;
 }
 
-.support-pillars li + li {
+.support-pillars li+li {
   margin-top: 0.5rem;
 }
 
@@ -207,6 +206,10 @@
   padding: 2rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.package-full-width {
+  grid-column: 1 / -1;
 }
 
 .package-card h3 {
@@ -313,6 +316,7 @@
 /* Responsivnost */
 
 @media (max-width: 991px) {
+
   .program-hero-inner,
   .program-two-columns {
     grid-template-columns: 1fr;
@@ -326,6 +330,7 @@
 /* Mali razmaci na mobilnim uređajima */
 
 @media (max-width: 576px) {
+
   .program-section,
   .program-hero {
     padding: 3rem 0;
@@ -482,7 +487,7 @@
   padding: 0;
 }
 
-.month-items li + li {
+.month-items li+li {
   margin-top: 0.5rem;
 }
 
@@ -570,7 +575,7 @@
   padding: 0;
 }
 
-.month-items li + li {
+.month-items li+li {
   margin-top: 0.7rem;
 }
 
@@ -788,11 +793,9 @@
 
 /* MEMBERSHIP PROMO BANNER */
 .membership-promo-banner {
-  background: linear-gradient(
-    135deg,
-    var(--pbmit-global-color) 0%,
-    #8faecf 100%
-  );
+  background: linear-gradient(135deg,
+      var(--pbmit-global-color) 0%,
+      #8faecf 100%);
   color: #fff;
   padding: 3rem 2rem;
   border-radius: 16px;
@@ -810,7 +813,8 @@
 /* STRUCTURE HEADER - SEPARATED */
 .structure-intro {
   background-color: #fff;
-  padding-bottom: 2rem !important; /* Override general padding */
+  padding-bottom: 2rem !important;
+  /* Override general padding */
 }
 
 .structure-header-pure {
@@ -846,12 +850,10 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      transparent);
 }
 
 .membership-promo-banner p {
