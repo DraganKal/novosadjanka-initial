@@ -2316,6 +2316,24 @@ form button {
   /* text-shadow: 0px 0px 4px #a6a198; */
 }
 
+@media (max-width: 768px) {
+
+  /* sakrij belu karticu na mobilnom */
+  #slider-2-slide-4-layer-14,
+  #slider-2-slide-16-layer-14,
+  #slider-2-slide-17-layer-14 {
+    display: none !important;
+  }
+
+  /* sakrij bullet navigaciju */
+  .rs-bullets,
+  .tp-bullets,
+  .section-blue {
+    display: none !important;
+  }
+}
+
+
 /* fonts */
 
 .text-20 {

@@ -7,7 +7,8 @@
 
 /* Sekcije */
 .program-section {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .program-section-alt {
@@ -333,7 +334,8 @@
 
   .program-section,
   .program-hero {
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .package-card,
