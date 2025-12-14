@@ -1,0 +1,82 @@
+/* Promo Section */
+.promo-section {
+    padding-bottom: 0;
+}
+
+.promo-image-wrapper {
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.promo-image-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.promo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Video Section */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Instagram Section */
+.instagram-section {
+    padding-top: 60px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-image-wrapper {
+        margin-top: 20px;
+    }
+}
+
+/* Fix for Instagram embeds to be responsive */
+.instagram-media {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 10px !important;
+    /* Override inline margin */
+}
