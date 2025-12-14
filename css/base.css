@@ -39,6 +39,8 @@ INDEX:
   --pbmit-global-color-light-6: #d6e2ee;
 
   --gray-color-main: #f2eee5;
+  --gray-color-dark-1: #dad7cf;
+
   --brown-color-main: #b7aa9a;
 
   --pbmit-secondary-color: #222d35;
@@ -769,7 +771,7 @@ body .pbmit-bg-color-white {
 }
 
 .site-navigations ul.navigation>li>a:hover {
-  color: var(--brown-color-main);
+  color: var(--gray-color-dark-1);
 }
 
 .site-navigation ul.navigation>li>a:hover:after {
