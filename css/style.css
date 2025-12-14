@@ -2316,6 +2316,17 @@ form button {
   /* text-shadow: 0px 0px 4px #a6a198; */
 }
 
+@media (min-width: 768px) {
+
+  .title-bar-logo {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 60%;
+  }
+
+}
+
 @media (max-width: 768px) {
 
   /* sakrij belu karticu na mobilnom */
@@ -2331,7 +2342,17 @@ form button {
   .section-blue {
     display: none !important;
   }
+
+  .title-bar-logo {
+    position: absolute;
+    width: 100px;
+    top: 0 !important;
+    right: 0 !important;
+
+  }
 }
+
+
 
 
 /* fonts */

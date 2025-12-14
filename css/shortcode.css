@@ -2505,8 +2505,8 @@ ul.pbmit-timelist-list li {
 }
 
 .pbmit-title-bar-wrapper {
-    background-color: transparent;
-    background-image: url(../images/bkg1920x400.png);
+    background-color: var(--gray-color-main);
+    /* background-image: url(../images/bkg1920x400.png); */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
