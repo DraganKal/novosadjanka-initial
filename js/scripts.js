@@ -211,16 +211,10 @@
   if (jQuery('.site-header-menu-wrapper').length == 0) {
     jQuery('.site-header-menu').wrap('<div class="site-header-menu-wrapper"></div>');
   }
-  jQuery('.site-header-menu-wrapper').height(jQuery('.site-header-menu-wrapper').height()).css('margin-bottom', jQuery('.site-header-menu').css('margin-bottom'));
+  jQuery('.site-header-menu-wrapper').height(jQuery('.site-header-menu').outerHeight()).css('margin-bottom', jQuery('.site-header-menu').css('margin-bottom'));
 
   jQuery(window).resize(function () {
-    if (jQuery(window).width() < 1200) {
-      jQuery('.site-header-menu-wrapper').css('height', '');
-      jQuery('.site-header-menu-wrapper').css('margin-bottom', '');
-    } else {
-      jQuery('.site-header-menu-wrapper').height(jQuery('.site-header-menu-wrapper').height()).css('margin-bottom', jQuery('.site-header-menu').css('margin-bottom'));
-    }
-
+    jQuery('.site-header-menu-wrapper').height(jQuery('.site-header-menu').outerHeight()).css('margin-bottom', jQuery('.site-header-menu').css('margin-bottom'));
   });
 
   /*-------------------------------------

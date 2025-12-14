@@ -75,9 +75,6 @@ body {
 		padding-left: calc(var(--bs-gutter-x) * .8);
 	}
 
-	.sticky-header {
-		position: relative !important;
-	}
 
 	/** Main menu resoposive **/
 	.pbmit-menu-wrap {
