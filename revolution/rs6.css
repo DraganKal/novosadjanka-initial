@@ -2271,7 +2271,7 @@ rs-sbg canvas {
 	z-index: 5;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	background-color: #f2eee5 !important;
+	background-color: #fff !important;
 }
 
 
