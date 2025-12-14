@@ -61,7 +61,7 @@
 }
 
 .terms-content a:hover {
-    color: var(--pbmit-secondary-color, #c3002f);
+    color: var(--brown-color-main, #c3002f);
 }
 
 /* Responsive adjustments */
