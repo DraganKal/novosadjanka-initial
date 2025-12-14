@@ -1399,6 +1399,10 @@ blockquote small:before {
   border-bottom: 1px solid #eee;
 }
 
+.pbmit-post-desc {
+  width: 350px;
+}
+
 .pbmit-blog-classic .pbmit-post-title a {
   color: #2c2c2c;
 }
