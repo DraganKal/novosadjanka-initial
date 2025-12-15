@@ -212,25 +212,26 @@
 
 									<!-- Program -->
 									<div class="form-group-custom">
-										<label class="checkbox-label-main">
-											<input type="checkbox" name="program" value="Program od nule do uspeha">
-											<span class="checkbox-custom"></span>
-											Program od nule do uspeha
-										</label>
-									</div>
-
-									<!-- Paket radionica -->
-									<div class="form-group-custom">
-										<label class="checkbox-label-main">
-											<input type="checkbox" name="paket_radionica" value="Paket radionica">
-											<span class="checkbox-custom"></span>
-											Paket radionica
-										</label>
+										<label class="group-label">Program “Od nule do uspeha”:</label>
+										<div class="radio-group">
+											<label class="radio-label">
+												<input type="radio" name="program_option"
+													value="Paket svih 10 radionica">
+												<span class="radio-custom"></span>
+												Paket svih 10 radionica
+											</label>
+											<label class="radio-label">
+												<input type="radio" name="program_option" value="Pojedinačna radionica"
+													id="radio-pojedinacna">
+												<span class="radio-custom"></span>
+												Pojedinačna radionica
+											</label>
+										</div>
 									</div>
 
 									<!-- Radionica (Multiple Dropdown) -->
-									<div class="form-group-custom">
-										<label class="group-label">Pojedinačna radionica:</label>
+									<div class="form-group-custom" id="radionica-dropdown-container"
+										style="display: none;">
 										<div class="custom-dropdown" id="dropdown-radionica">
 											<div class="dropdown-header">
 												<span class="selected-text">Izaberite radionice</span>
@@ -238,29 +239,63 @@
 											</div>
 											<div class="dropdown-list">
 												<label class="dropdown-item">
-													<input type="checkbox" name="radionica[]" value="Radionica 1">
+													<input type="checkbox" name="radionica[]"
+														value="Mindset i autentičnost">
 													<span class="checkbox-custom-small"></span>
-													Radionica 1
+													Mindset i autentičnost
 												</label>
 												<label class="dropdown-item">
-													<input type="checkbox" name="radionica[]" value="Radionica 2">
+													<input type="checkbox" name="radionica[]"
+														value="Od ideje do biznis plana">
 													<span class="checkbox-custom-small"></span>
-													Radionica 2
+													Od ideje do biznis plana
 												</label>
 												<label class="dropdown-item">
-													<input type="checkbox" name="radionica[]" value="Radionica 3">
+													<input type="checkbox" name="radionica[]"
+														value="Lični brend i autentičnost">
 													<span class="checkbox-custom-small"></span>
-													Radionica 3
+													Lični brend i autentičnost
 												</label>
 												<label class="dropdown-item">
-													<input type="checkbox" name="radionica[]" value="Radionica 4">
+													<input type="checkbox" name="radionica[]"
+														value="Marketing i prodaja">
 													<span class="checkbox-custom-small"></span>
-													Radionica 4
+													Marketing i prodaja
 												</label>
 												<label class="dropdown-item">
-													<input type="checkbox" name="radionica[]" value="Radionica 5">
+													<input type="checkbox" name="radionica[]"
+														value="Finansije u biznisu">
 													<span class="checkbox-custom-small"></span>
-													Radionica 5
+													Finansije u biznisu
+												</label>
+												<label class="dropdown-item">
+													<input type="checkbox" name="radionica[]"
+														value="Liderstvo i balans">
+													<span class="checkbox-custom-small"></span>
+													Liderstvo i balans
+												</label>
+												<label class="dropdown-item">
+													<input type="checkbox" name="radionica[]"
+														value="Planiranje druge polovine godine – fokus i rast">
+													<span class="checkbox-custom-small"></span>
+													Planiranje druge polovine godine – fokus i rast
+												</label>
+												<label class="dropdown-item">
+													<input type="checkbox" name="radionica[]"
+														value="Kako skalirati biznis i graditi saradnje">
+													<span class="checkbox-custom-small"></span>
+													Kako skalirati biznis i graditi saradnje
+												</label>
+												<label class="dropdown-item">
+													<input type="checkbox" name="radionica[]"
+														value="Inovacija u malom biznisu – kako se izdvojiti na tržištu">
+													<span class="checkbox-custom-small"></span>
+													Inovacija u malom biznisu – kako se izdvojiti na tržištu
+												</label> <label class="dropdown-item">
+													<input type="checkbox" name="radionica[]"
+														value="Zatvaranje godine i postavljanje vizije za 2026.">
+													<span class="checkbox-custom-small"></span>
+													Zatvaranje godine i postavljanje vizije za 2026.
 												</label>
 											</div>
 										</div>
@@ -296,13 +331,7 @@
 													<input type="checkbox" name="webshop[]"
 														value="Prirucnik od nule do uspeha">
 													<span class="checkbox-custom-small"></span>
-													Priručnik od nule do uspeha
-												</label>
-												<label class="dropdown-item">
-													<input type="checkbox" name="webshop[]"
-														value="Prirucnik dizajn enterijera">
-													<span class="checkbox-custom-small"></span>
-													Priručnik dizajn enterijera
+													Priručnik “Od nule do uspeha”
 												</label>
 											</div>
 										</div>
@@ -355,8 +384,9 @@
 									<i class="pbmit-base-icon-check-mark"></i>
 									<h3>Zahvaljujemo Vam na prijavi!</h3>
 									<p>
-										U roku od 48h biće Vam dostavljen dodatni email sa instrukcijama za uplatu, kao
-										i svim relevantnim informacijama u vezi sa daljom realizacijom.</p>
+										U roku od 48h biće Vam upućen telefonski poziv od strane našeg tima i dostavljen
+										dodatni email sa instrukcijama za uplatu, kao i svim relevantnim informacijama u
+										vezi sa daljom realizacijom..</p>
 								</div>
 							</div>
 
@@ -413,6 +443,20 @@
 							selectedText.textContent = defaultText;
 						}
 					}
+
+					// Program radio logic
+					const programRadios = document.querySelectorAll('input[name="program_option"]');
+					const radionicaContainer = document.getElementById('radionica-dropdown-container');
+
+					programRadios.forEach(radio => {
+						radio.addEventListener('change', () => {
+							if (radio.value === 'Pojedinačna radionica' && radio.checked) {
+								radionicaContainer.style.display = 'block';
+							} else {
+								radionicaContainer.style.display = 'none';
+							}
+						});
+					});
 
 					// Close dropdowns when clicking outside
 					document.addEventListener('click', (e) => {
