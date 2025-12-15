@@ -174,11 +174,12 @@
 				<p class="rs-p-wp-fix"></p>
 
 				<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="slider-demo-1" data-source="gallery"
-					style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;max-width:100%;">
+					style="visibility:hidden;background:transparent;padding:0;margin:0px auto;max-width:100%;">
+
 					<rs-module id="rev_slider_1_1" data-version="6.5.24">
 						<rs-slides>
 
-							<!-- ===================== SLIDE 1 ===================== -->
+							<!-- ===================== SLIDE 1 (Tekst) ===================== -->
 							<rs-slide style="position:absolute;" data-key="rs-4" data-title="Slide"
 								data-thumb="revolution/images/slider-01-a-100x50.jpg" data-anim="ms:600;r:0;"
 								data-in="o:0;" data-out="a:false;">
@@ -186,78 +187,40 @@
 								<img src="revolution/images/dummy.png" alt="" title="slider-01-a" width="1715"
 									height="692" class="rev-slidebg tp-rs-img" data-bg="c:#ffffff;" data-no-retina>
 
-								<!-- DESKTOP LOGO (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-4-layer-logo" data-type="image" data-rsp_ch="on"
-									data-xy="x:l,l,l,l;xo:50px,50px,50px,0px;y:m,m,m,m;yo:0,0,0,0px;"
-									data-dim="w:550px,450px,350px,250px;h:auto;" data-frame_0="x:-50;"
-									data-frame_1="st:500;sp:1000;" data-frame_999="o:0;st:w;" data-vbility="t,t,t,f"
-									style="z-index:9;">
-									<img src="images/blue-logo.svg" alt="" width="500" height="500" data-no-retina>
-								</rs-layer>
-
-								<!-- MOBILE LOGO (gore, veći) -->
-								<rs-layer id="slide1-mobile-logo" data-type="image" data-rsp_ch="on"
-									data-xy="x:c;xo:0px;y:t;yo:10px;" data-dim="w:260px;h:auto;"
-									data-frame_0="y:-20;opacity:0;" data-frame_1="st:350;sp:600;opacity:1;"
-									data-frame_999="o:0;st:w;" data-vbility="f,f,f,t" style="z-index:30;">
-									<img src="images/blue-logo.svg" alt="" width="520" height="520" data-no-retina>
-								</rs-layer>
-
-								<!-- DESKTOP white card (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-4-layer-14" data-type="shape" data-rsp_ch="on"
+								<!-- DESKTOP WHITE CARD -->
+								<rs-layer id="slide1-desktop-card" data-type="shape" data-rsp_ch="on"
 									data-xy="x:r;xo:30px,25px,22px,0px;y:t,b,b,t;yo:139px,153px,190px,0px;"
-									data-dim="w:500px,433px,380px,320px;h:415px,282px,237px,220px;"
-									data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:power4.out;st:310;sp:1000;sR:310;"
-									data-frame_999="o:0;st:w;sR:7690;" data-vbility="t,t,t,f"
-									style="z-index:8;background-color:#fff;border-radius:14px;">
+									data-dim="w:500px,433px,380px,320px;h:415px,282px,237px,220px;" data-frame_0="o:1;"
+									data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;" data-vbility="t,t,t,f"
+									style="z-index:7;background-color:#fff;border-radius:14px;pointer-events:none;">
 								</rs-layer>
 
-								<!-- DESKTOP tekst (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-4-layer-0" data-type="text" data-color="#b7aa9a"
+								<!-- DESKTOP tekst (ANIMACIJA VRACENA) -->
+								<rs-layer id="slide1-desktop-text" data-type="text" data-color="#b7aa9a"
 									data-rsp_ch="on"
 									data-xy="xo:746px,601px,410px,0px;y:t,b,b,t;yo:235px,260px,271px,0px;"
 									data-text="w:normal;s:34,34,34,20;l:60,50,44,30;fw:600;"
-									data-frame_0="x:-50,-41,-31,-19;" data-frame_1="st:1190;sp:1000;sR:1190;"
-									data-frame_999="o:0;st:w;sR:6810;" data-vbility="t,t,t,f"
-									style="z-index:10;font-family:'Newsreader';">
+									data-frame_0="y:50;opacity:0;"
+									data-frame_1="st:500;sp:900;opacity:1;y:0;ease:power3.out;"
+									data-frame_999="o:0;st:w;" data-vbility="t,t,t,f"
+									style="z-index:20;font-family:'Newsreader';white-space:normal;">
 									Dobrodošla u zajednicu <br> gde se spajaju strast <br> znanje i podrška.
 								</rs-layer>
 
-								<!-- DESKTOP dugme (sakriveno na telefonu) -->
-								<a id="slider-2-slide-4-layer-btn" class="rs-layer rev-btn" href="clanstvo.html"
-									target="_self" rel="nofollow" data-type="button" data-rsp_ch="on"
-									data-xy="xo:751px,602px,411px,0px;y:t,b,b,t;yo:445px,190px,220px,0px;"
-									data-text="w:normal;s:14,14,14,12;l:55,55,45,44;fw:600;"
-									data-padding="r:40,33,30,22;l:40,33,30,22;" data-frame_0="y:50,41,31,19;"
-									data-frame_1="st:1930;sp:1000;sR:1930;" data-frame_999="o:0;st:w;sR:6070;"
-									data-frame_hover="c:#99b6d4;bgc:#f2eee5;bor:0px,0px,0px,0px;border-radius:12px;"
-									data-vbility="t,t,t,f"
-									style="z-index:13;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;">
-									<span class="rev-button">Učlani se</span>
-								</a>
-
-								<!-- ========= MOBILE TEXT + BUTTON (vezano za DNO da ne ispadne) ========= -->
+								<!-- MOBILE tekst (ANIMACIJA VRACENA) -->
 								<rs-layer id="slide1-mobile-text" data-type="text" data-color="#b7aa9a" data-rsp_ch="on"
 									data-xy="x:c;xo:0px;y:b;yo:130px;" data-dim="w:320px,320px,320px,320px;h:auto;"
 									data-text="w:normal;s:20,20,20,20;l:30,30,30,30;fw:600;a:center;"
-									data-vbility="f,f,f,t" data-frame_0="y:10;opacity:0;"
-									data-frame_1="st:520;sp:600;opacity:1;" data-frame_999="o:0;st:w;"
-									style="z-index:31;font-family:'Newsreader';text-align:center;white-space:normal;">
+									data-vbility="f,f,f,t" data-frame_0="y:30;opacity:0;"
+									data-frame_1="st:500;sp:900;opacity:1;y:0;ease:power3.out;"
+									data-frame_999="o:0;st:w;"
+									style="z-index:21;font-family:'Newsreader';text-align:center;white-space:normal;">
 									Dobrodošla u zajednicu gde se spajaju strast, znanje i podrška.
 								</rs-layer>
 
-								<a id="slide1-mobile-btn" class="rs-layer rev-btn" href="clanstvo.html" target="_self"
-									rel="nofollow" data-type="button" data-rsp_ch="on" data-xy="x:c;xo:0px;y:b;yo:60px;"
-									data-text="w:normal;s:12,12,12,12;l:44,44,44,44;fw:600;" data-padding="r:22;l:22;"
-									data-vbility="f,f,f,t" data-frame_0="y:10;opacity:0;"
-									data-frame_1="st:600;sp:600;opacity:1;" data-frame_999="o:0;st:w;"
-									style="z-index:32;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;">
-									<span class="rev-button">Učlani se</span>
-								</a>
-
 							</rs-slide>
 
-							<!-- ===================== SLIDE 2 ===================== -->
+							<!-- ===================== SLIDE 2 (Tekst) ===================== -->
 							<rs-slide style="position:absolute;" data-key="rs-16" data-title="Slide"
 								data-thumb="revolution/images/slider-01-b-100x50.jpg" data-anim="ms:600;r:0;"
 								data-in="o:0;" data-out="a:false;">
@@ -265,77 +228,41 @@
 								<img src="revolution/images/dummy.png" alt="" title="slider-01-b" width="1715"
 									height="692" class="rev-slidebg tp-rs-img" data-bg="c:#ffffff;" data-no-retina>
 
-								<!-- DESKTOP LOGO (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-16-layer-logo" data-type="image" data-rsp_ch="on"
-									data-xy="x:l,l,l,l;xo:50px,50px,50px,0px;y:m,m,m,m;yo:0,0,0,0px;"
-									data-dim="w:550px,450px,350px,250px;h:auto;" data-frame_0="x:-50;"
-									data-frame_1="st:500;sp:1000;" data-frame_999="o:0;st:w;" data-vbility="t,t,t,f"
-									style="z-index:9;">
-									<img src="images/blue-logo.svg" alt="" width="500" height="500" data-no-retina>
-								</rs-layer>
-
-								<!-- MOBILE LOGO -->
-								<rs-layer id="slide2-mobile-logo" data-type="image" data-rsp_ch="on"
-									data-xy="x:c;xo:0px;y:t;yo:20px;" data-dim="w:260px;h:auto;"
-									data-frame_0="y:-20;opacity:0;" data-frame_1="st:350;sp:600;opacity:1;"
-									data-frame_999="o:0;st:w;" data-vbility="f,f,f,t" style="z-index:30;">
-									<img src="images/blue-logo.svg" alt="" width="520" height="520" data-no-retina>
-								</rs-layer>
-
-								<!-- DESKTOP sadržaj (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-16-layer-14" data-type="shape" data-rsp_ch="on"
+								<!-- DESKTOP WHITE CARD -->
+								<rs-layer id="slide2-desktop-card" data-type="shape" data-rsp_ch="on"
 									data-xy="x:r;xo:30px,25px,22px,0px;y:t,b,b,t;yo:139px,153px,190px,0px;"
-									data-dim="w:500px,433px,380px,320px;h:415px,282px,237px,220px;"
-									data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:power4.out;st:310;sp:1000;sR:310;"
-									data-frame_999="o:0;st:w;sR:7690;" data-vbility="t,t,t,f"
-									style="z-index:8;background-color:#ffffff;border-radius:14px;">
+									data-dim="w:500px,433px,380px,320px;h:415px,282px,237px,220px;" data-frame_0="o:1;"
+									data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;" data-vbility="t,t,t,f"
+									style="z-index:7;background-color:#fff;border-radius:14px;pointer-events:none;">
 								</rs-layer>
 
-								<rs-layer id="slider-2-slide-16-layer-0" data-type="text" data-color="#b7aa9a"
+								<!-- DESKTOP tekst (ANIMACIJA VRACENA) -->
+								<rs-layer id="slide2-desktop-text" data-type="text" data-color="#b7aa9a"
 									data-rsp_ch="on"
 									data-xy="xo:746px,601px,410px,0px;y:t,b,b,t;yo:235px,260px,271px,0px;"
 									data-text="w:normal;s:34,34,28,20;l:60,50,44,30;fw:600;"
-									data-frame_0="x:-50,-41,-31,-19;" data-frame_1="st:1190;sp:1000;sR:1190;"
-									data-frame_999="o:0;st:w;sR:6810;" data-vbility="t,t,t,f"
-									style="z-index:10;font-family:'Newsreader';">
+									data-frame_0="y:50;opacity:0;"
+									data-frame_1="st:500;sp:900;opacity:1;y:0;ease:power3.out;"
+									data-frame_999="o:0;st:w;" data-vbility="t,t,t,f"
+									style="z-index:20;font-family:'Newsreader';white-space:normal;">
 									Inspirišemo i osnažujemo <br> žene Novog Sada da pokrenu <br> ili unaprede svoj
 									biznis.
 								</rs-layer>
 
-								<a id="slider-2-slide-16-layer-btn" class="rs-layer rev-btn" href="clanstvo.html"
-									target="_self" rel="nofollow" data-type="button" data-rsp_ch="on"
-									data-xy="xo:751px,602px,411px,0px;y:t,b,b,t;yo:445px,190px,220px,0px;"
-									data-text="w:normal;s:14,14,14,12;l:55,55,45,44;fw:600;"
-									data-padding="r:40,33,30,22;l:40,33,30,22;" data-frame_0="y:50,41,31,19;"
-									data-frame_1="st:1930;sp:1000;sR:1930;" data-frame_999="o:0;st:w;sR:6070;"
-									data-frame_hover="c:#99b6d4;bgc:#f2eee5;bor:0px,0px,0px,0px;border-radius:12px;"
-									data-vbility="t,t,t,f"
-									style="z-index:13;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;">
-									<span class="rev-button">Učlani se</span>
-								</a>
-
-								<!-- MOBILE text + btn (vezano za dno) -->
+								<!-- MOBILE tekst (ANIMACIJA VRACENA) -->
 								<rs-layer id="slide2-mobile-text" data-type="text" data-color="#b7aa9a" data-rsp_ch="on"
 									data-xy="x:c;xo:0px;y:b;yo:130px;" data-dim="w:320px,320px,320px,320px;h:auto;"
 									data-text="w:normal;s:20,20,20,20;l:30,30,30,30;fw:600;a:center;"
-									data-vbility="f,f,f,t" data-frame_0="y:10;opacity:0;"
-									data-frame_1="st:520;sp:600;opacity:1;" data-frame_999="o:0;st:w;"
-									style="z-index:31;font-family:'Newsreader';text-align:center;white-space:normal;">
+									data-vbility="f,f,f,t" data-frame_0="y:30;opacity:0;"
+									data-frame_1="st:500;sp:900;opacity:1;y:0;ease:power3.out;"
+									data-frame_999="o:0;st:w;"
+									style="z-index:21;font-family:'Newsreader';text-align:center;white-space:normal;">
 									Inspirišemo i osnažujemo žene Novog Sada da pokrenu ili unaprede svoj biznis.
 								</rs-layer>
 
-								<a id="slide2-mobile-btn" class="rs-layer rev-btn" href="clanstvo.html" target="_self"
-									rel="nofollow" data-type="button" data-rsp_ch="on" data-xy="x:c;xo:0px;y:b;yo:60px;"
-									data-text="w:normal;s:12,12,12,12;l:44,44,44,44;fw:600;" data-padding="r:22;l:22;"
-									data-vbility="f,f,f,t" data-frame_0="y:10;opacity:0;"
-									data-frame_1="st:600;sp:600;opacity:1;" data-frame_999="o:0;st:w;"
-									style="z-index:32;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;">
-									<span class="rev-button">Učlani se</span>
-								</a>
-
 							</rs-slide>
 
-							<!-- ===================== SLIDE 3 ===================== -->
+							<!-- ===================== SLIDE 3 (Tekst) ===================== -->
 							<rs-slide style="position:absolute;" data-key="rs-17" data-title="Slide"
 								data-thumb="revolution/images/slider-01-c-100x50.jpg" data-anim="ms:600;r:0;"
 								data-in="o:0;" data-out="a:false;">
@@ -343,79 +270,95 @@
 								<img src="revolution/images/dummy.png" alt="" title="slider-01-c" width="1715"
 									height="692" class="rev-slidebg tp-rs-img" data-bg="c:#ffffff;" data-no-retina>
 
-								<!-- DESKTOP LOGO (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-17-layer-logo" data-type="image" data-rsp_ch="on"
-									data-xy="x:l,l,l,l;xo:50px,50px,50px,0px;y:m,m,m,m;yo:0,0,0,0px;"
-									data-dim="w:550px,450px,350px,250px;h:auto;" data-frame_0="x:-50;"
-									data-frame_1="st:500;sp:1000;" data-frame_999="o:0;st:w;" data-vbility="t,t,t,f"
-									style="z-index:9;">
-									<img src="images/blue-logo.svg" alt="" width="500" height="500" data-no-retina>
-								</rs-layer>
-
-								<!-- MOBILE LOGO -->
-								<rs-layer id="slide3-mobile-logo" data-type="image" data-rsp_ch="on"
-									data-xy="x:c;xo:0px;y:t;yo:20px;" data-dim="w:260px;h:auto;"
-									data-frame_0="y:-20;opacity:0;" data-frame_1="st:350;sp:600;opacity:1;"
-									data-frame_999="o:0;st:w;" data-vbility="f,f,f,t" style="z-index:30;">
-									<img src="images/blue-logo.svg" alt="" width="520" height="520" data-no-retina>
-								</rs-layer>
-
-								<!-- DESKTOP sadržaj (sakriven na telefonu) -->
-								<rs-layer id="slider-2-slide-17-layer-14" data-type="shape" data-rsp_ch="on"
+								<!-- DESKTOP WHITE CARD -->
+								<rs-layer id="slide3-desktop-card" data-type="shape" data-rsp_ch="on"
 									data-xy="x:r;xo:30px,25px,22px,0px;y:t,b,b,t;yo:139px,153px,190px,0px;"
-									data-dim="w:500px,433px,380px,320px;h:415px,282px,237px,220px;"
-									data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:power4.out;st:310;sp:1000;sR:310;"
-									data-frame_999="o:0;st:w;sR:7690;" data-vbility="t,t,t,f"
-									style="z-index:8;background-color:#ffffff;border-radius:14px;">
+									data-dim="w:500px,433px,380px,320px;h:415px,282px,237px,220px;" data-frame_0="o:1;"
+									data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;" data-vbility="t,t,t,f"
+									style="z-index:7;background-color:#fff;border-radius:14px;pointer-events:none;">
 								</rs-layer>
 
-								<rs-layer id="slider-2-slide-17-layer-0" data-type="text" data-color="#b7aa9a"
+								<!-- DESKTOP tekst (ANIMACIJA VRACENA) -->
+								<rs-layer id="slide3-desktop-text" data-type="text" data-color="#b7aa9a"
 									data-rsp_ch="on"
 									data-xy="xo:746px,601px,410px,0px;y:t,b,b,t;yo:235px,260px,271px,0px;"
 									data-text="w:normal;s:34,34,34,20;l:60,50,44,30;fw:600;"
-									data-frame_0="x:-50,-41,-31,-19;" data-frame_1="st:1190;sp:1000;sR:1190;"
-									data-frame_999="o:0;st:w;sR:6810;" data-vbility="t,t,t,f"
-									style="z-index:10;font-family:'Newsreader';">
+									data-frame_0="y:50;opacity:0;"
+									data-frame_1="st:500;sp:900;opacity:1;y:0;ease:power3.out;"
+									data-frame_999="o:0;st:w;" data-vbility="t,t,t,f"
+									style="z-index:20;font-family:'Newsreader';white-space:normal;">
 									Pomažemo Vam kroz <br> članstvo, radionice i <br> coaching.
 								</rs-layer>
 
-								<a id="slider-2-slide-17-layer-btn" class="rs-layer rev-btn" href="clanstvo.html"
-									target="_self" rel="nofollow" data-type="button" data-rsp_ch="on"
-									data-xy="xo:751px,602px,411px,0px;y:t,b,b,t;yo:445px,190px,220px,0px;"
-									data-text="w:normal;s:14,14,14,12;l:55,55,45,44;fw:600;"
-									data-padding="r:40,33,30,22;l:40,33,30,22;" data-frame_0="y:50,41,31,19;"
-									data-frame_1="st:1930;sp:1000;sR:1930;" data-frame_999="o:0;st:w;sR:6070;"
-									data-frame_hover="c:#99b6d4;bgc:#f2eee5;bor:0px,0px,0px,0px;border-radius:12px;"
-									data-vbility="t,t,t,f"
-									style="z-index:13;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;">
-									<span class="rev-button">Učlani se</span>
-								</a>
-
-								<!-- MOBILE text + btn (vezano za dno) -->
+								<!-- MOBILE tekst (ANIMACIJA VRACENA) -->
 								<rs-layer id="slide3-mobile-text" data-type="text" data-color="#b7aa9a" data-rsp_ch="on"
 									data-xy="x:c;xo:0px;y:b;yo:130px;" data-dim="w:320px,320px,320px,320px;h:auto;"
 									data-text="w:normal;s:20,20,20,20;l:30,30,30,30;fw:600;a:center;"
-									data-vbility="f,f,f,t" data-frame_0="y:10;opacity:0;"
-									data-frame_1="st:520;sp:600;opacity:1;" data-frame_999="o:0;st:w;"
-									style="z-index:31;font-family:'Newsreader';text-align:center;white-space:normal;">
+									data-vbility="f,f,f,t" data-frame_0="y:30;opacity:0;"
+									data-frame_1="st:500;sp:900;opacity:1;y:0;ease:power3.out;"
+									data-frame_999="o:0;st:w;"
+									style="z-index:21;font-family:'Newsreader';text-align:center;white-space:normal;">
 									Pomažemo Vam kroz članstvo, radionice i coaching.
 								</rs-layer>
-
-								<a id="slide3-mobile-btn" class="rs-layer rev-btn" href="clanstvo.html" target="_self"
-									rel="nofollow" data-type="button" data-rsp_ch="on" data-xy="x:c;xo:0px;y:b;yo:60px;"
-									data-text="w:normal;s:12,12,12,12;l:44,44,44,44;fw:600;" data-padding="r:22;l:22;"
-									data-vbility="f,f,f,t" data-frame_0="y:10;opacity:0;"
-									data-frame_1="st:600;sp:600;opacity:1;" data-frame_999="o:0;st:w;"
-									style="z-index:32;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;">
-									<span class="rev-button">Učlani se</span>
-								</a>
 
 							</rs-slide>
 
 						</rs-slides>
+
+						<!-- ===================== STATIC (NE MENJA SE) ===================== -->
+						<rs-static-layers>
+
+							<!-- DESKTOP LOGO (stalno) -->
+							<rs-layer id="static-desktop-logo" data-type="image" data-rsp_ch="on"
+								data-xy="x:l,l,l,l;xo:50px,50px,50px,0px;y:m,m,m,m;yo:0,0,0,0px;"
+								data-dim="w:550px,450px,350px,250px;h:auto;" data-frame_0="o:1;"
+								data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;" data-vbility="t,t,t,f"
+								style="z-index:9;">
+								<img src="images/blue-logo.svg" alt="" width="500" height="500" data-no-retina>
+							</rs-layer>
+
+							<!-- MOBILE LOGO (stalno) -->
+							<rs-layer id="static-mobile-logo" data-type="image" data-rsp_ch="on"
+								data-xy="x:c;xo:0px;y:t;yo:20px;" data-dim="w:260px;h:auto;" data-frame_0="o:1;"
+								data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;" data-vbility="f,f,f,t"
+								style="z-index:30;">
+								<img src="images/blue-logo.svg" alt="" width="520" height="520" data-no-retina>
+							</rs-layer>
+
+							<!-- DESKTOP BUTTON (stalno, STATIC) -->
+							<a id="static-desktop-btn" class="rs-layer rev-btn" href="clanstvo.html" target="_self"
+								rel="nofollow" data-type="button" data-rsp_ch="on"
+								data-xy="xo:751px,602px,411px,0px;y:t,b,b,t;yo:445px,190px,220px,0px;"
+								data-text="w:normal;s:14,14,14,12;l:55,55,45,44;fw:600;"
+								data-padding="r:40,33,30,22;l:40,33,30,22;" data-frame_0="o:1;"
+								data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;"
+								data-frame_hover="c:#99b6d4;bgc:#f2eee5;bor:0px,0px,0px,0px;border-radius:12px;"
+								data-vbility="t,t,t,f"
+								style="z-index:13;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;pointer-events:auto;">
+								<span class="rev-button">Učlani se</span>
+							</a>
+
+							<!-- MOBILE BUTTON (stalno, STATIC) -->
+							<a id="static-mobile-btn" class="rs-layer rev-btn" href="clanstvo.html" target="_self"
+								rel="nofollow" data-type="button" data-rsp_ch="on" data-xy="x:c;xo:0px;y:b;yo:60px;"
+								data-text="w:normal;s:12,12,12,12;l:44,44,44,44;fw:600;" data-padding="r:22;l:22;"
+								data-frame_0="o:1;" data-frame_1="st:0;sp:0;o:1;" data-frame_999="o:1;st:w;"
+								data-vbility="f,f,f,t"
+								style="z-index:32;background-color:#99b6d4;font-family:'Newsreader';text-transform:uppercase;border-radius:12px;pointer-events:auto;">
+								<span class="rev-button">Učlani se</span>
+							</a>
+
+						</rs-static-layers>
+
 					</rs-module>
 				</rs-module-wrap>
 			</div>
+
+
+
+
+
+
 
 
 

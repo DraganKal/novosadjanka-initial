@@ -2328,6 +2328,10 @@ form button {
     left: 60%;
   }
 
+  .mt-button-res {
+    margin-top: 6.5rem !important;
+  }
+
 }
 
 .logo-questions {
@@ -2348,9 +2352,14 @@ form button {
   display: none;
 }
 
+.br-res-komp {
+  display: block;
+}
+
 .text-center-res {
   text-align: center;
 }
+
 
 @media (max-width: 768px) {
 
@@ -2404,6 +2413,10 @@ form button {
 
   .br-res {
     display: block;
+  }
+
+  .br-res-komp {
+    display: none;
   }
 
   .button-res-13 {

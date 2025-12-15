@@ -261,6 +261,29 @@
   font-weight: 600;
 }
 
+/* Desktop - prikaži odvojene kolone za datum i vreme */
+.program-table .date-with-time {
+  display: none;
+}
+
+.program-table .date-only,
+.program-table .time-column {
+  display: table-cell;
+}
+
+/* Mobilni - prikaži datum i vreme zajedno, sakrij odvojene kolone */
+@media (max-width: 767px) {
+
+  .program-table .date-only,
+  .program-table .time-column {
+    display: none;
+  }
+
+  .program-table .date-with-time {
+    display: table-cell;
+  }
+}
+
 .program-total,
 .package-total {
   /* margin-top: 0.75rem; */

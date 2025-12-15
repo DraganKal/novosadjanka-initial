@@ -3605,3 +3605,30 @@ rs-loader.spinner15 .rs-spinner-inner:last-child {
 .avada-has-rev-slider-styles .rev_slider_wrapper {
 	transform: none;
 }
+
+/* rs-static-layers {
+	pointer-events: none;
+}
+
+rs-static-layers .rs-layer,
+rs-static-layers a.rs-layer {
+	pointer-events: auto;
+} */
+
+#rev_slider_1_1 rs-static-layers rs-layer,
+#rev_slider_1_1 rs-static-layers a.rs-layer {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+/* Optional: ensure they are clickable */
+#rev_slider_1_1 rs-static-layers {
+	pointer-events: auto !important;
+}
+
+/* @media (min-width: 768px) {
+	#rev_slider_1_1 rs-slide rs-layer {
+		opacity: 1 !important;
+		visibility: visible !important;
+	}
+} */
