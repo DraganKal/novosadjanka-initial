@@ -1175,7 +1175,8 @@ body .scroll-to-top {
   height: 45px;
   line-height: 40px;
   font-size: 16px;
-  background-color: var(--pbmit-global-color);
+  background-color: var(--gray-color-main);
+  border-radius: 10px;
   text-align: center;
   border: 3px solid #eeeeee;
   color: #fff;
