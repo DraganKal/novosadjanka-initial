@@ -121,7 +121,7 @@ blockquote small:before {
 .about-one-img {
   position: relative;
   height: 100%;
-  padding: 70px 60px 100px 0px;
+  margin: 70px 60px 100px 0px;
 }
 
 .about-one-img::before {
@@ -704,8 +704,8 @@ blockquote small:before {
 
 .about-inbox .pbmit-ihbox-style-1 {
   position: absolute;
-  bottom: 100px;
-  left: 0;
+  top: 390px;
+  left: -10px;
   display: inline-block;
   border-radius: 10px
 }
