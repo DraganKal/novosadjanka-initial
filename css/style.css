@@ -2337,6 +2337,21 @@ form button {
   align-items: center;
 }
 
+.program-hero-logo {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 150px !important;
+}
+
+.br-res {
+  display: none;
+}
+
+.text-center-res {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
 
   /* sakrij belu karticu na mobilnom */
@@ -2378,6 +2393,26 @@ form button {
     padding-top: 20px !important;
     padding-bottom: 15px !important;
   }
+
+  .program-hero-logo {
+    width: 100px !important;
+  }
+
+  .program-hero-inner {
+    padding-top: 0 !important;
+  }
+
+  .br-res {
+    display: block;
+  }
+
+  .button-res-13 {
+    padding-top: 15px;
+  }
+
+  .text-center-res {
+    text-align: left;
+  }
 }
 
 .navbar-toggler {
@@ -2386,14 +2421,9 @@ form button {
 
 
 /* fonts */
-
 .text-20 {
   font-size: 20px !important;
 }
-
-/* .img-per-80 {
-  width: 80% !important;
-} */
 
 /* sizings */
 .w-400px {
@@ -2403,4 +2433,9 @@ form button {
 /* Text colors */
 .text-blue {
   color: var(--pbmit-global-color) !important;
+}
+
+/* Background colors */
+.bkg-white {
+  background-color: #fff !important;
 }

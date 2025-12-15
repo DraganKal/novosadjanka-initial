@@ -1316,9 +1316,9 @@ body {
 		padding: 0;
 	}
 
-	br {
+	/* br {
 		display: none;
-	}
+	} */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
