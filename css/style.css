@@ -2127,11 +2127,12 @@ form button {
 /* Responsivno podešavanje */
 @media (max-width: 767.98px) {
   .novo-footer .footer-top {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .novo-footer .footer-main {
     text-align: center;
+    padding-top: 0;
   }
 
   .novo-footer .footer-logo-wrap {
@@ -2367,6 +2368,15 @@ form button {
   .solution-button1 {
     margin-top: 0;
     margin-bottom: 40px;
+  }
+
+  .pb-res-50 {
+    padding-bottom: 30px;
+  }
+
+  .month-item-res {
+    padding-top: 20px !important;
+    padding-bottom: 15px !important;
   }
 }
 

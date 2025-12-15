@@ -466,6 +466,7 @@ th {
 
     .pricing-cards {
         grid-template-columns: 1fr;
+        padding-bottom: 0;
     }
 
     .card {
