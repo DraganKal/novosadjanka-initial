@@ -889,3 +889,26 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+/* Responsive list centering for desktop */
+.ul-res {
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .ul-res {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .package-card {
+    text-align: center;
+  }
+
+  .package-card .ul-res {
+    text-align: left;
+  }
+}

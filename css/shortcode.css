@@ -3713,9 +3713,9 @@ ul.list-group .list-group-item i {
 .btn-prijava {
     display: inline-block;
     padding: 12px 22px 6px 22px;
-    background-color: #ffffff;
+    background-color: var(--gray-color-main);
     /* belo dugme */
-    color: #7d9fc3;
+    color: var(--pbmit-global-color);
     /* tvoja plava */
     border-radius: 6px;
     font-weight: 600;
@@ -3723,19 +3723,19 @@ ul.list-group .list-group-item i {
     text-transform: uppercase;
     letter-spacing: 0.6px;
     transition: all 0.25s ease;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    /* border: 2px solid rgba(255, 255, 255, 0.8); */
 }
 
-.sticky-header .btn-prijava {
+/* .sticky-header .btn-prijava {
     background-color: var(--pbmit-global-color);
     color: var(--pbmit-white-color);
     border: none;
-}
+} */
 
 .btn-prijava:hover {
-    background-color: var(--gray-color-main);
-    color: var(--pbmit-global-color);
-    border-color: var(--gray-color-main);
+    background-color: var(--brown-color-main);
+    color: #fff;
+    /* border-color: var(--gray-color-main); */
 }
 
 
