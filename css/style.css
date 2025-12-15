@@ -2468,6 +2468,16 @@ form button {
   .d-none-phone {
     display: none;
   }
+
+  .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper {
+    font-size: 35px;
+    margin-right: 0;
+  }
+
+  .about-inbox .pbmit-ihbox-style-1 {
+    padding: 10px 25px 10px 25px;
+    height: 75px !important;
+  }
 }
 
 .navbar-toggler {
