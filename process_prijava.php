@@ -61,7 +61,21 @@ function h(string $value): string {
     return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+/**
+ * Vraća niz checkbox vrednosti iz POST-a (radi i za name="x[]" i za name="x")
+ */
+function postArray(string $key): array {
+    $val = $_POST[$key] ?? [];
+    if (!is_array($val)) return [];
+    $clean = [];
+    foreach ($val as $v) {
+        $t = trim((string)$v);
+        if ($t !== '') $clean[] = $t;
+    }
+    return $clean;
+}
+
+if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     jsonError(405, 'Method not allowed');
 }
 
@@ -74,17 +88,18 @@ $emailRaw   = trim((string)($_POST['email'] ?? ''));
 $telefon    = trim((string)($_POST['telefon'] ?? ''));
 $biografija = trim((string)($_POST['biografija'] ?? ''));
 
-$clanstvo        = trim((string)($_POST['clanstvo'] ?? ''));
-$program         = trim((string)($_POST['program'] ?? ''));
-$paket_radionica = trim((string)($_POST['paket_radionica'] ?? ''));
+// NOVO (prema tvojoj formi)
+$clanstvo       = trim((string)($_POST['clanstvo'] ?? ''));          // radio
+$program_option = trim((string)($_POST['program_option'] ?? ''));     // radio: "Paket svih 10 radionica" / "Pojedinačna radionica"
 
-// checkbox arrays
-$radionice = (isset($_POST['radionica']) && is_array($_POST['radionica']))
-    ? implode(", ", array_map('trim', $_POST['radionica'])) : '';
-$coaching  = (isset($_POST['coaching']) && is_array($_POST['coaching']))
-    ? implode(", ", array_map('trim', $_POST['coaching'])) : '';
-$webshop   = (isset($_POST['webshop']) && is_array($_POST['webshop']))
-    ? implode(", ", array_map('trim', $_POST['webshop'])) : '';
+// checkbox arrays (PHP dobije key bez [])
+$radioniceArr = postArray('radionica');
+$coachingArr  = postArray('coaching');
+$webshopArr   = postArray('webshop');
+
+$radionice = $radioniceArr ? implode(", ", $radioniceArr) : '';
+$coaching  = $coachingArr ? implode(", ", $coachingArr) : '';
+$webshop   = $webshopArr ? implode(", ", $webshopArr) : '';
 
 $email = filter_var($emailRaw, FILTER_VALIDATE_EMAIL);
 if (!$email) {
@@ -92,6 +107,14 @@ if (!$email) {
 }
 if ($ime === '' || $prezime === '') {
     jsonError(400, 'Ime i prezime su obavezni.');
+}
+if ($telefon === '') {
+    jsonError(400, 'Telefon je obavezan.');
+}
+
+// Ako je izabrana "Pojedinačna radionica", očekujemo da je bar jedna radionica čekirana
+if ($program_option === 'Pojedinačna radionica' && count($radioniceArr) === 0) {
+    jsonError(400, 'Molimo izaberite bar jednu radionicu.');
 }
 
 // ------------------------------------------------------
@@ -123,7 +146,7 @@ if ($smtp_secure_raw === 'tls') {
 }
 
 // ------------------------------------------------------
-// Build email bodies (sanitized)
+// Build email bodies (sanitized) - ADMIN
 // ------------------------------------------------------
 $admin_body = "<h2>Nova prijava sa sajta</h2>";
 $admin_body .= "<table style='border-collapse: collapse; width: 100%; max-width: 600px;'>";
@@ -135,15 +158,33 @@ $admin_body .= "<tr><td style='padding: 8px; border-bottom: 1px solid #ddd;'><st
 $admin_body .= "</table>";
 
 $admin_body .= "<h3>Odabrane usluge:</h3><ul>";
-if ($clanstvo) $admin_body .= "<li><strong>Članstvo:</strong> " . h($clanstvo) . "</li>";
-if ($program) $admin_body .= "<li><strong>Program:</strong> " . h($program) . "</li>";
-if ($paket_radionica) $admin_body .= "<li><strong>Paket radionica:</strong> " . h($paket_radionica) . "</li>";
-if ($radionice) $admin_body .= "<li><strong>Radionice:</strong> " . h($radionice) . "</li>";
-if ($coaching) $admin_body .= "<li><strong>Coaching:</strong> " . h($coaching) . "</li>";
-if ($webshop) $admin_body .= "<li><strong>Webshop:</strong> " . h($webshop) . "</li>";
+
+if ($clanstvo !== '') {
+    $admin_body .= "<li><strong>Članstvo:</strong> " . h($clanstvo) . "</li>";
+}
+
+if ($program_option !== '') {
+    $admin_body .= "<li><strong>Program “Od nule do uspeha”:</strong> " . h($program_option) . "</li>";
+
+    // Ako je pojedinačna, prikaži i listu radionica
+    if ($program_option === 'Pojedinačna radionica' && $radionice !== '') {
+        $admin_body .= "<li><strong>Izabrane radionice:</strong> " . h($radionice) . "</li>";
+    }
+}
+
+if ($coaching !== '') {
+    $admin_body .= "<li><strong>Coaching:</strong> " . h($coaching) . "</li>";
+}
+
+if ($webshop !== '') {
+    $admin_body .= "<li><strong>Webshop:</strong> " . h($webshop) . "</li>";
+}
+
 $admin_body .= "</ul>";
 
-// USER EMAIL (kao na slici)
+// ------------------------------------------------------
+// USER EMAIL (OSTAJE ISTO)
+// ------------------------------------------------------
 $subject_user = 'Potvrda prijave - Novosađanka.rs';
 
 // Kontakt podaci (menjaj ovde ako treba)
