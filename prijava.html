@@ -480,6 +480,16 @@
 									updateSelectedText(webshopDropdown);
 								}
 							});
+
+							// Hide elements above webshop section
+							const webshopContainer = webshopDropdown.closest('.form-group-custom');
+							if (webshopContainer) {
+								let sibling = webshopContainer.previousElementSibling;
+								while (sibling) {
+									sibling.style.display = 'none';
+									sibling = sibling.previousElementSibling;
+								}
+							}
 						}
 					}
 
