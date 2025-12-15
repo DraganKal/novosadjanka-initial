@@ -138,7 +138,34 @@ blockquote small:before {
   border-radius: 20px;
 }
 
+
+
 .about-one-img img {
+  /* box-shadow: 68px 0px 0px -30px var(--pbmit-global-color); */
+  border-radius: 20px;
+}
+
+.about-one-img-pocetna {
+  position: relative;
+  height: 100%;
+  margin: 70px 60px 100px 0px;
+}
+
+.about-one-img-pocetna::before {
+  position: absolute;
+  height: 100%;
+  width: 164%;
+  top: -70px;
+  right: -70px;
+  content: "";
+  display: block;
+  z-index: -1;
+  margin-right: 210px;
+  background-color: var(--pbmit-global-color-light-6);
+  border-radius: 20px;
+}
+
+.about-one-img-pocetna img {
   /* box-shadow: 68px 0px 0px -30px var(--pbmit-global-color); */
   border-radius: 20px;
 }
