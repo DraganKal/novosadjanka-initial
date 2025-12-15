@@ -656,7 +656,7 @@
 }
 
 .pbmit-fld-active.pbminfotech-ele-fid-style-1 .pbmit-fid span {
-    color: var(--gray-color-main);
+    color: var(--pbmit-global-color);
     position: relative;
     left: -16px;
 }

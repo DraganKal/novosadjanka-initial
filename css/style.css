@@ -2149,7 +2149,7 @@ form button {
 }
 
 .kako-radimo-clean .kako-title {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
   margin-bottom: 12px;
   color: var(--brown-color-main);
@@ -2172,7 +2172,7 @@ form button {
 }
 
 .kako-radimo-clean .kako-desc {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6;
   color: #6a7a8b;
 }
@@ -2180,7 +2180,7 @@ form button {
 /* Responsivno malo razmaka */
 @media (max-width: 767px) {
   .kako-radimo-clean .kako-radimo-item {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -2197,9 +2197,11 @@ form button {
   background-color: var(--pbmit-global-color);
 }
 
-.bkg-color-gray {
+.bkg-color-gray-res-white {
   background-color: var(--gray-color-main);
 }
+
+
 
 /* Custom Service Cards */
 .pbmit-service-style-3 {
@@ -2327,6 +2329,13 @@ form button {
 
 }
 
+.logo-questions {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
 
   /* sakrij belu karticu na mobilnom */
@@ -2350,10 +2359,19 @@ form button {
     right: 0 !important;
 
   }
+
+  .bkg-color-gray-res-white {
+    background-color: #fff;
+  }
+
+  .solution-button1 {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .navbar-toggler {
-  background-color: var(--gray-color-main);
+  background-color: #fff;
 }
 
 
@@ -2363,9 +2381,9 @@ form button {
   font-size: 20px !important;
 }
 
-.img-per-80 {
+/* .img-per-80 {
   width: 80% !important;
-}
+} */
 
 /* sizings */
 .w-400px {
