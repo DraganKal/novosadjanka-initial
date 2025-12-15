@@ -2387,6 +2387,13 @@ form button {
   text-align: center;
 }
 
+.d-none-phone {
+  display: block;
+}
+
+.d-phone {
+  display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -2452,6 +2459,14 @@ form button {
 
   .text-center-res {
     text-align: left;
+  }
+
+  .d-phone {
+    display: block;
+  }
+
+  .d-none-phone {
+    display: none;
   }
 }
 
