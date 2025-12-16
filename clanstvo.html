@@ -1251,9 +1251,9 @@
                         <div class="col-12 col-md-4 text-md-center">
                             <div class="footer-newsletter">
                                 <h2 class="widget-title">Prijavi se za najnovije vesti</h2>
-                                <form>
+                                <form class="newsletter-form" action="process_news.php" method="POST">
                                     <div class="input-group pbmit-newsletter">
-                                        <input type="email" class="form-control" placeholder="Email adresa"
+                                        <input type="email" name="email" class="form-control" placeholder="Email adresa"
                                             required="" />
                                         <button type="submit">Prijava</button>
                                     </div>
@@ -1352,6 +1352,8 @@
     <script src="js/circle-progress.js"></script>
     <!-- Scripts JS -->
     <script src="js/scripts.js"></script>
+    <!-- Newsletter JS -->
+    <script src="js/newsletter.js"></script>
 </body>
 
 </html>
